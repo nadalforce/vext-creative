@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="vextGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path d="M20 25 L60 95 L100 25" stroke="url(#vextGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <path d="M35 25 L60 70 L85 25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
+  <circle cx="60" cy="95" r="4" fill="url(#vextGrad)"/>
+</svg>
