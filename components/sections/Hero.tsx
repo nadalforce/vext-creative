@@ -18,7 +18,7 @@ export function Hero() {
     <section
       id="hero"
       ref={ref}
-      className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden bg-black"
+      className="relative flex min-h-[100dvh] items-center justify-center overflow-x-hidden overflow-y-hidden bg-black"
     >
       <HeroAtmosphere sectionRef={ref} />
 
@@ -32,29 +32,28 @@ export function Hero() {
       />
 
       <motion.div
-        className="relative z-10 mx-auto w-full max-w-7xl px-6 py-32 text-center md:px-10 md:py-40"
+        className="relative z-10 mx-auto w-full max-w-[95vw] overflow-hidden px-4 py-24 text-center sm:px-6 sm:py-32 md:px-8 md:py-40 lg:max-w-7xl"
         style={{ opacity: textOpacity }}
       >
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-10 flex justify-center"
+          className="mb-8 flex justify-center sm:mb-10"
         >
-          <span className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-black/50 px-6 py-2.5 backdrop-blur-xl">
+          <span className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 rounded-full border border-white/10 bg-black/50 px-4 py-2 backdrop-blur-xl sm:gap-3 sm:px-6 sm:py-2.5">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-violet-400 opacity-60" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-violet-500" />
             </span>
-            <span className="text-[11px] font-semibold uppercase tracking-[0.28em] text-white/70">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-white/70 sm:text-[11px] sm:tracking-[0.28em]">
               VEXT Creative | Medya Ajansı
             </span>
           </span>
         </motion.div>
 
         <motion.h1
-          className="font-display font-extrabold leading-[0.92] tracking-[-0.03em] text-white"
-          style={{ fontSize: "clamp(3.25rem, 11vw, 8.5rem)" }}
+          className="font-display mx-auto max-w-full text-balance text-5xl font-extrabold leading-[0.9] tracking-[-0.03em] text-white sm:text-6xl md:text-7xl lg:text-8xl"
           initial={{ opacity: 0, y: 48 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
@@ -64,7 +63,7 @@ export function Hero() {
         </motion.h1>
 
         <motion.p
-          className="mx-auto mt-10 max-w-2xl text-base leading-relaxed text-white/55 md:text-lg"
+          className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white/55 sm:mt-10 sm:text-base md:text-lg"
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.65 }}
@@ -75,20 +74,20 @@ export function Hero() {
         </motion.p>
 
         <motion.div
-          className="mt-14 flex flex-col items-center justify-center gap-5 sm:flex-row"
+          className="mt-10 flex w-full flex-col items-center justify-center gap-4 sm:mt-14 sm:flex-row sm:gap-5"
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.85 }}
         >
           <a
             href="#galeri"
-            className="rounded-full bg-gradient-to-r from-violet-600 via-indigo-600 to-blue-600 px-12 py-4 text-[13px] font-bold uppercase tracking-[0.14em] text-white glow-violet transition-transform hover:scale-[1.02]"
+            className="w-full max-w-xs rounded-full bg-gradient-to-r from-violet-600 via-indigo-600 to-blue-600 px-8 py-3.5 text-xs font-bold uppercase tracking-[0.14em] text-white glow-violet transition-transform hover:scale-[1.02] sm:w-auto sm:max-w-none sm:px-12 sm:py-4 sm:text-[13px]"
           >
             Atölye Karelerini Keşfedin
           </a>
           <a
             href="#contact"
-            className="flex items-center gap-3 rounded-full border border-white/12 bg-black/40 px-10 py-4 text-[13px] font-bold uppercase tracking-[0.14em] text-white backdrop-blur-xl transition-all hover:border-violet-500/40"
+            className="flex w-full max-w-xs items-center justify-center gap-3 rounded-full border border-white/12 bg-black/40 px-8 py-3.5 text-xs font-bold uppercase tracking-[0.14em] text-white backdrop-blur-xl transition-all hover:border-violet-500/40 sm:w-auto sm:max-w-none sm:px-10 sm:py-4 sm:text-[13px]"
           >
             <span className="relative flex h-10 w-10 items-center justify-center rounded-full border border-white/15">
               <ViewfinderMark size={24} pulse={false} />
