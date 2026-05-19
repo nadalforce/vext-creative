@@ -15,10 +15,11 @@ const syne = Syne({
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://vextmedya.com";
+const SITE_TITLE = "VEXT Creative | Medya Ajansı";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "VEXT Creative | Sinematik Yaratıcı Ajans",
+  title: SITE_TITLE,
   description:
     "Video prodüksiyon, reklam filmi, grafik tasarım, web tasarım ve marka kimliği. Geleceği görselleştiren premium yaratıcı ajans.",
   icons: {
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "VEXT Creative",
+    title: SITE_TITLE,
     description: "Geleceği görselleştiren sinematik yaratıcı ajans",
     type: "website",
     locale: "tr_TR",
@@ -46,13 +47,13 @@ export const metadata: Metadata = {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "VEXT Creative — sinematik yaratıcı ajans",
+        alt: SITE_TITLE,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "VEXT Creative",
+    title: SITE_TITLE,
     description: "Geleceği görselleştiren sinematik yaratıcı ajans",
     images: [OG_IMAGE],
   },
