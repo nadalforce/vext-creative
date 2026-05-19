@@ -4,7 +4,6 @@ import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlassCard } from "@/components/ui/GlassCard";
-import { PhotoFrame } from "@/components/ui/PhotoFrame";
 import { GlowOrb } from "@/components/ui/GlowOrb";
 import { CONTACT, SERVICES } from "@/lib/constants";
 import { MEDIA } from "@/lib/media-manifest";
@@ -29,16 +28,10 @@ function InstagramIcon({ className }: { className?: string }) {
 const socialBtnBase =
   "group inline-flex h-12 items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.03] px-5 text-[13px] font-semibold tracking-[0.02em] backdrop-blur-xl transition-all duration-300";
 
-type ContactProps = {
-  officeImages?: string[];
-};
+const CONTACT_SHOWCASE = MEDIA.contactShowcase;
 
-export function Contact({ officeImages = [] }: ContactProps) {
+export function Contact() {
   const [submitted, setSubmitted] = useState(false);
-  const imgs: string[] = (
-    officeImages.length > 0 ? officeImages : [...MEDIA.ofis]
-  ).filter((src) => src !== "/media/ofis/ofis-04.png");
-  const [studioMain, studioLeft, studioRight] = imgs;
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -50,53 +43,51 @@ export function Contact({ officeImages = [] }: ContactProps) {
       id="contact"
       className="relative overflow-hidden border-t border-white/[0.04] bg-black py-24 md:py-36"
     >
-      <GlowOrb className="bottom-0 left-1/4" color="mixed" delay={0} />
+      <GlowOrb className="bottom-0 left-1/4" color="ambient" delay={0} />
       <GlowOrb className="right-1/4 top-1/4" color="violet" delay={2} />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10">
         <SectionHeading
           label="İletişim"
           title="Projenizi Konuşalım"
-          description="Bir sonraki sinematik hikâyenizi birlikte yazalım. Size en geç 24 saat içinde dönüş yapıyoruz."
+          description="İşletmenizi büyütmek için bizimle iletişime geçin. Size hızlıca dönüş sağlayalım."
         />
 
-        {/* Studio atmosphere — architectural office gallery */}
-        {studioMain && (
-          <motion.div
-            className="relative mt-14 md:mt-16"
-            initial={{ opacity: 0, y: 32 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <div className="absolute -inset-6 rounded-[2rem] bg-violet-950/20 blur-[60px]" />
-            <div className="relative grid gap-4 lg:grid-cols-12 lg:gap-5">
-              <PhotoFrame
-                src={studioMain}
-                heightClass="h-[min(48vh,440px)] lg:h-[min(52vh,480px)]"
-                className="lg:col-span-7"
-                objectPosition="center"
-              />
-              <div className="flex flex-col gap-4 lg:col-span-5 lg:-mt-8">
-                {studioLeft && (
-                  <PhotoFrame
-                    src={studioLeft}
-                    heightClass="h-[min(28vh,260px)]"
-                    className="lg:translate-x-3"
-                    objectPosition="center 35%"
-                  />
-                )}
-                {studioRight && (
-                  <PhotoFrame
-                    src={studioRight}
-                    heightClass="h-[min(24vh,220px)]"
-                    className="lg:-translate-x-2 lg:rotate-[0.5deg]"
-                  />
-                )}
-              </div>
-            </div>
-          </motion.div>
-        )}
+        <motion.ul
+          className="mx-auto mt-14 flex w-full max-w-3xl flex-col gap-5 md:mt-16 md:max-w-4xl md:gap-7 lg:max-w-[52rem]"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
+          aria-label="Stüdyo görselleri"
+        >
+          {CONTACT_SHOWCASE.map((src, i) => (
+            <motion.li
+              key={src}
+              className="w-full"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{
+                delay: 0.08 * i,
+                duration: 0.65,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+            >
+              <figure className="photo-frame w-full overflow-hidden rounded-2xl bg-black ring-1 ring-white/15 shadow-[0_20px_60px_rgba(0,0,0,0.45)] md:rounded-3xl">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={src}
+                  alt={`VEXT Creative stüdyo ${i + 1}`}
+                  className="photo-frame__img block h-auto w-full max-w-full object-contain object-center"
+                  loading={i === 0 ? "eager" : "lazy"}
+                  decoding="async"
+                  draggable={false}
+                />
+              </figure>
+            </motion.li>
+          ))}
+        </motion.ul>
 
         <div className="mt-16 grid gap-16 lg:grid-cols-2 lg:gap-20">
           <motion.div
@@ -148,7 +139,7 @@ export function Contact({ officeImages = [] }: ContactProps) {
                 href={CONTACT.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`${socialBtnBase} text-white/55 hover:border-violet-500/35 hover:bg-violet-500/10 hover:text-white hover:shadow-[0_0_32px_rgba(124,58,237,0.2)]`}
+                className={`${socialBtnBase} text-white/55 hover:border-white/25 hover:bg-white/[0.06] hover:text-white hover:shadow-[0_0_32px_rgba(255,255,255,0.06)]`}
                 aria-label="Instagram"
               >
                 <InstagramIcon className="h-4 w-4 shrink-0 text-violet-400/90 transition-colors group-hover:text-violet-300" />
@@ -260,7 +251,7 @@ export function Contact({ officeImages = [] }: ContactProps) {
                   <motion.button
                     type="submit"
                     variants={fadeUp}
-                    className="group relative w-full overflow-hidden rounded-xl bg-gradient-to-r from-violet-600 to-blue-600 py-4 text-sm font-semibold uppercase tracking-widest text-white shadow-[0_0_40px_rgba(139,92,246,0.25)] transition-all hover:shadow-[0_0_60px_rgba(139,92,246,0.4)]"
+                    className="btn-primary-premium group relative w-full overflow-hidden rounded-xl py-4 text-sm font-semibold uppercase tracking-widest transition-all"
                     whileHover={{ scale: 1.01 }}
                     whileTap={{ scale: 0.99 }}
                   >

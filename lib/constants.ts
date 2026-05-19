@@ -99,7 +99,6 @@ export const SERVICE_SHOWCASES = SERVICES.map((service, index) => ({
 export const NAV_LINKS = [
   { href: "#hero", label: "Ana Sayfa" },
   { href: "#services", label: "Hizmetler" },
-  { href: "#galeri", label: "Atölye Kareleri" },
   { href: "/journal", label: "Yazılar" },
   { href: "#about", label: "Hakkımızda" },
   { href: "#contact", label: "İletişim" },

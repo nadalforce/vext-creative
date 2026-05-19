@@ -48,8 +48,8 @@ export function VextLogo({
         priority={priority}
         className={`relative z-10 h-auto w-auto object-contain ${
           subdued
-            ? "opacity-[0.96] drop-shadow-[0_0_28px_rgba(139,92,246,0.2)]"
-            : "drop-shadow-[0_0_12px_rgba(139,92,246,0.25)]"
+            ? "opacity-[0.96] drop-shadow-[0_0_28px_rgba(255,255,255,0.06)]"
+            : "drop-shadow-[0_0_12px_rgba(255,255,255,0.08)]"
         }`}
         style={{ width: dim.w, height: "auto", maxHeight: dim.h }}
       />

@@ -1,13 +1,26 @@
 ﻿"use client";
 
 import { motion } from "framer-motion";
+import { AboutCapabilityIcon } from "@/components/ui/AboutCapabilityIcon";
 import { GlowOrb } from "@/components/ui/GlowOrb";
 
 const CAPABILITIES = [
-  "sinematik iç & dış mekan reklam çekimlerinden",
-  "ürün tanıtımlarından",
-  "sosyal medya yönetimine",
-  "web tasarımdan marka kimliği oluşturmaya kadar",
+  {
+    line: "sinematik iç & dış mekan reklam çekimlerinden",
+    icon: "film",
+  },
+  {
+    line: "ürün tanıtımlarından",
+    icon: "product",
+  },
+  {
+    line: "sosyal medya yönetimine",
+    icon: "social",
+  },
+  {
+    line: "web tasarımdan marka kimliği oluşturmaya kadar",
+    icon: "brand",
+  },
 ] as const;
 
 export function About() {
@@ -17,14 +30,14 @@ export function About() {
       className="relative overflow-hidden border-t border-white/[0.04] bg-black py-24 md:py-36"
     >
       <GlowOrb className="-left-40 top-1/4" color="violet" delay={0.5} />
-      <GlowOrb className="right-0 bottom-1/4" color="blue" delay={2} />
+      <GlowOrb className="right-0 bottom-1/4" color="soft" delay={2} />
 
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_50%_at_50%_0%,rgba(124,58,237,0.08)_0%,transparent_55%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_50%_at_50%_0%,rgba(25,18,32,0.15)_0%,transparent_55%)]"
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-500/25 to-transparent"
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent"
         aria-hidden
       />
 
@@ -42,7 +55,7 @@ export function About() {
           </p>
           <h2 className="font-display text-[clamp(2rem,5.5vw,4.25rem)] font-bold leading-[1.08] tracking-[-0.03em] text-white">
             Biz{" "}
-            <span className="text-gradient-brand">VEXT Creative</span> Ailesi
+            <span className="text-gradient-brand">VEXT Creative</span> Ekibi
             Olarak
           </h2>
         </motion.header>
@@ -64,18 +77,22 @@ export function About() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-white/40">
               Bugün
             </p>
-            <ul className="mt-5 space-y-3">
-              {CAPABILITIES.map((line, i) => (
+            <ul className="mt-5 space-y-4 md:space-y-[1.125rem]">
+              {CAPABILITIES.map((item, i) => (
                 <motion.li
-                  key={line}
-                  className="flex gap-3 text-base leading-snug text-white/60 md:text-[1.05rem]"
+                  key={item.line}
+                  className="group flex min-w-0 items-start gap-3.5 md:gap-4"
                   initial={{ opacity: 0, x: -12 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.05 * i, duration: 0.5 }}
                 >
-                  <span className="mt-2 h-px w-6 shrink-0 bg-violet-500/50" />
-                  <span>{line}</span>
+                  <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-white/[0.08] bg-white/[0.02] text-white/40 transition-colors duration-300 group-hover:border-white/15 group-hover:text-white/65 md:h-9 md:w-9">
+                    <AboutCapabilityIcon name={item.icon} className="h-[15px] w-[15px] md:h-4 md:w-4" />
+                  </span>
+                  <span className="min-w-0 flex-1 pt-1 text-base leading-snug text-white/60 md:text-[1.05rem] md:leading-[1.55]">
+                    {item.line}
+                  </span>
                 </motion.li>
               ))}
             </ul>
@@ -117,7 +134,7 @@ export function About() {
             <p className="mt-4 font-display text-2xl font-bold leading-[1.3] text-gradient-brand md:text-3xl lg:text-4xl">
               markaya güçlü bir atmosfer kazandırmak.
             </p>
-            <div className="mt-8 h-px w-16 bg-gradient-to-r from-violet-500 to-blue-500" />
+            <div className="mt-8 h-px w-16 bg-gradient-to-r from-white/50 to-transparent" />
           </motion.div>
         </motion.blockquote>
       </motion.div>

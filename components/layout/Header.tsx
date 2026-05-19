@@ -25,7 +25,7 @@ function NavItem({
   className: string;
 }) {
   const underline = (
-    <span className="absolute -bottom-1.5 left-0 h-px w-0 bg-gradient-to-r from-violet-500 to-blue-500 transition-all duration-500 group-hover:w-full" />
+    <span className="absolute -bottom-1.5 left-0 h-px w-0 bg-gradient-to-r from-white/70 to-white/30 transition-all duration-500 group-hover:w-full" />
   );
 
   if (isRouteLink(href)) {
@@ -121,7 +121,7 @@ export function Header() {
 
           <a
             href={contactHref}
-            className="hidden shrink-0 items-center self-center rounded-full border border-white/10 bg-white/[0.04] px-7 py-2.5 text-[13px] font-semibold uppercase tracking-[0.1em] text-white backdrop-blur-md transition-all duration-300 hover:border-violet-500/50 hover:bg-violet-500/10 hover:shadow-[0_0_40px_rgba(139,92,246,0.25)] lg:ml-10 lg:inline-flex xl:ml-12"
+            className="hidden shrink-0 items-center self-center rounded-full border border-white/15 bg-white/[0.06] px-7 py-2.5 text-[13px] font-semibold uppercase tracking-[0.1em] text-white backdrop-blur-md transition-all duration-300 hover:border-white/35 hover:bg-white/10 hover:shadow-[0_0_40px_rgba(255,255,255,0.08)] lg:ml-10 lg:inline-flex xl:ml-12"
           >
             Proje Başlat
           </a>
@@ -176,7 +176,7 @@ export function Header() {
               ))}
               <motion.a
                 href={contactHref}
-                className="mt-4 rounded-full bg-gradient-to-r from-violet-600 to-blue-600 px-10 py-4 text-sm font-semibold uppercase tracking-widest text-white glow-violet"
+                className="btn-primary-premium mt-4 rounded-full px-10 py-4 text-sm font-semibold uppercase tracking-widest"
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.45 }}

@@ -51,7 +51,7 @@ export function FeaturedArticle({ article }: FeaturedArticleProps) {
           </p>
           <Link
             href={`${JOURNAL_BASE}/${article.slug}`}
-            className="mt-8 inline-flex w-fit items-center rounded-full bg-gradient-to-r from-violet-600 via-indigo-600 to-blue-600 px-10 py-3.5 text-[12px] font-bold uppercase tracking-[0.14em] text-white glow-violet transition-transform hover:scale-[1.02]"
+            className="btn-primary-premium mt-8 inline-flex w-fit items-center rounded-full px-10 py-3.5 text-[12px] font-bold uppercase tracking-[0.14em] transition-transform hover:scale-[1.02]"
           >
             Makaleyi Oku
           </Link>

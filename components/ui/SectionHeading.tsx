@@ -27,7 +27,7 @@ export function SectionHeading({
       viewport={{ once: true, margin: "-80px" }}
     >
       <span className="mb-4 inline-flex items-center gap-3 text-xs font-medium uppercase tracking-[0.3em] text-violet-400">
-        <span className="h-px w-8 bg-gradient-to-r from-violet-500 to-blue-500" />
+        <span className="h-px w-8 bg-gradient-to-r from-white/50 to-transparent" />
         {label}
       </span>
       <h2

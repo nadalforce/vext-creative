@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { PhotoFrame } from "@/components/ui/PhotoFrame";
 
@@ -15,7 +15,30 @@ type ServiceVisualCompositionProps = {
   layout: LayoutKind;
 };
 
-const showcaseFit = { fit: "contain" as const };
+const showcaseFit = { fit: "showcase" as const };
+
+function ShowcaseImage({
+  src,
+  heightClass,
+  wrapperClassName = "",
+  frameClassName = "",
+}: {
+  src: string;
+  heightClass: string;
+  wrapperClassName?: string;
+  frameClassName?: string;
+}) {
+  return (
+    <div className={`flex w-full min-w-0 justify-center ${wrapperClassName}`}>
+      <PhotoFrame
+        {...showcaseFit}
+        src={src}
+        heightClass={heightClass}
+        className={frameClassName}
+      />
+    </div>
+  );
+}
 
 export function ServiceVisualComposition({
   images,
@@ -33,38 +56,29 @@ export function ServiceVisualComposition({
 
   if (layout === "production") {
     if (!b) {
-      return (
-        <PhotoFrame
-          {...showcaseFit}
-          src={a}
-          heightClass="h-[min(62vh,600px)]"
-        />
-      );
+      return <ShowcaseImage src={a} heightClass="max-h-[min(62vh,600px)]" />;
     }
 
     return (
       <div className="grid gap-4 lg:grid-cols-12 lg:gap-5">
-        <PhotoFrame
-          {...showcaseFit}
+        <ShowcaseImage
           src={a}
-          heightClass="h-[min(62vh,600px)]"
-          className="lg:col-span-7"
+          heightClass="max-h-[min(62vh,600px)]"
+          wrapperClassName="lg:col-span-7"
         />
-        <div className="flex flex-col gap-4 lg:col-span-5 lg:-mt-6">
+        <div className="flex flex-col items-center gap-4 lg:col-span-5 lg:-mt-6">
           {b && (
-            <PhotoFrame
-              {...showcaseFit}
+            <ShowcaseImage
               src={b}
-              heightClass="h-[min(32vh,320px)]"
-              className="lg:translate-x-2"
+              heightClass="max-h-[min(32vh,320px)]"
+              frameClassName="lg:translate-x-2"
             />
           )}
           {c && (
-            <PhotoFrame
-              {...showcaseFit}
+            <ShowcaseImage
               src={c}
-              heightClass="h-[min(26vh,260px)]"
-              className="lg:-translate-x-3 lg:rotate-1"
+              heightClass="max-h-[min(26vh,260px)]"
+              frameClassName="lg:-translate-x-3 lg:rotate-1"
             />
           )}
         </div>
@@ -75,14 +89,14 @@ export function ServiceVisualComposition({
   if (layout === "edit") {
     return (
       <div className="space-y-4">
-        <PhotoFrame {...showcaseFit} src={a} heightClass="h-[min(58vh,580px)]" />
+        <ShowcaseImage src={a} heightClass="max-h-[min(58vh,580px)]" />
         {(b || c) && (
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {b && (
-              <PhotoFrame {...showcaseFit} src={b} heightClass="h-[260px] md:h-[300px]" />
+              <ShowcaseImage src={b} heightClass="max-h-[260px] md:max-h-[300px]" />
             )}
             {c && (
-              <PhotoFrame {...showcaseFit} src={c} heightClass="h-[260px] md:h-[300px]" />
+              <ShowcaseImage src={c} heightClass="max-h-[260px] md:max-h-[300px]" />
             )}
           </div>
         )}
@@ -91,39 +105,27 @@ export function ServiceVisualComposition({
   }
 
   if (layout === "brandIdentity") {
-    return (
-      <div className="relative mx-auto max-w-5xl">
-        <PhotoFrame
-          {...showcaseFit}
-          src={a}
-          heightClass="h-[min(65vh,620px)]"
-        />
-      </div>
-    );
+    return <ShowcaseImage src={a} heightClass="max-h-[min(65vh,620px)]" />;
   }
 
   if (layout === "design") {
     return (
       <div className="relative pb-8 md:pb-16">
-        <PhotoFrame
-          {...showcaseFit}
-          src={a}
-          heightClass="h-[min(56vh,540px)]"
-        />
+        <ShowcaseImage src={a} heightClass="max-h-[min(56vh,540px)]" />
         {b && (
-          <PhotoFrame
-            {...showcaseFit}
+          <ShowcaseImage
             src={b}
-            heightClass="h-[min(40vh,380px)]"
-            className="mt-4 md:absolute md:right-0 md:top-[30%] md:mt-0 md:w-[min(44%,440px)] md:rotate-2"
+            heightClass="max-h-[min(40vh,380px)]"
+            wrapperClassName="mt-4 md:absolute md:right-0 md:top-[30%] md:mt-0 md:max-w-[min(44%,440px)] md:justify-end"
+            frameClassName="md:rotate-2"
           />
         )}
         {c && (
-          <PhotoFrame
-            {...showcaseFit}
+          <ShowcaseImage
             src={c}
-            heightClass="h-[min(32vh,300px)]"
-            className="mt-4 md:absolute md:left-[6%] md:bottom-0 md:mt-0 md:w-[min(38%,360px)] md:-rotate-1"
+            heightClass="max-h-[min(32vh,300px)]"
+            wrapperClassName="mt-4 md:absolute md:left-[6%] md:bottom-0 md:mt-0 md:max-w-[min(38%,360px)]"
+            frameClassName="md:-rotate-1"
           />
         )}
       </div>
@@ -132,30 +134,27 @@ export function ServiceVisualComposition({
 
   if (layout === "web") {
     if (!b) {
-      return <PhotoFrame {...showcaseFit} src={a} heightClass="h-[min(58vh,560px)]" />;
+      return <ShowcaseImage src={a} heightClass="max-h-[min(58vh,560px)]" />;
     }
 
     return (
       <div className="grid gap-4 lg:grid-cols-12 lg:gap-5">
-        <PhotoFrame
-          {...showcaseFit}
+        <ShowcaseImage
           src={a}
-          heightClass="h-[min(58vh,560px)]"
-          className="lg:col-span-7"
+          heightClass="max-h-[min(58vh,560px)]"
+          wrapperClassName="lg:col-span-7"
         />
-        <div className="flex flex-col gap-4 lg:col-span-5 lg:-mt-10">
-          <PhotoFrame
-            {...showcaseFit}
+        <div className="flex flex-col items-center gap-4 lg:col-span-5 lg:-mt-10">
+          <ShowcaseImage
             src={b}
-            heightClass="h-[min(38vh,380px)]"
-            className="lg:translate-x-4"
+            heightClass="max-h-[min(38vh,380px)]"
+            frameClassName="lg:translate-x-4"
           />
           {c && (
-            <PhotoFrame
-              {...showcaseFit}
+            <ShowcaseImage
               src={c}
-              heightClass="h-[min(30vh,300px)]"
-              className="lg:-translate-x-2 lg:rotate-1"
+              heightClass="max-h-[min(30vh,300px)]"
+              frameClassName="lg:-translate-x-2 lg:rotate-1"
             />
           )}
         </div>
@@ -165,15 +164,14 @@ export function ServiceVisualComposition({
 
   return (
     <div className="relative pb-6 md:pb-12">
-      <PhotoFrame {...showcaseFit} src={a} heightClass="h-[min(58vh,560px)] md:pr-[30%]" />
-      <div className="mt-4 flex flex-col gap-4 md:absolute md:right-0 md:top-[20%] md:mt-0 md:w-[min(40%,420px)]">
-        {b && <PhotoFrame {...showcaseFit} src={b} heightClass="h-[260px] md:h-[300px]" />}
+      <ShowcaseImage src={a} heightClass="max-h-[min(58vh,560px)]" />
+      <div className="mt-4 flex flex-col items-center gap-4 md:absolute md:right-0 md:top-[20%] md:mt-0 md:w-[min(40%,420px)]">
+        {b && <ShowcaseImage src={b} heightClass="max-h-[260px] md:max-h-[300px]" />}
         {c && (
-          <PhotoFrame
-            {...showcaseFit}
+          <ShowcaseImage
             src={c}
-            heightClass="h-[220px] md:h-[260px]"
-            className="md:translate-x-5"
+            heightClass="max-h-[220px] md:max-h-[260px]"
+            frameClassName="md:translate-x-5"
           />
         )}
       </div>

@@ -36,8 +36,8 @@ export function Services() {
           {SERVICES.map((service) => (
             <motion.div key={service.id} variants={fadeUp}>
               <a href={service.href} className="group block h-full">
-                <GlassCard className="h-full transition-all duration-500 group-hover:border-violet-500/25 group-hover:shadow-[0_0_50px_rgba(124,58,237,0.12)]">
-                  <motion.div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-violet-600/20 to-blue-600/15 text-violet-400 ring-1 ring-violet-500/20">
+                <GlassCard className="h-full transition-all duration-500 group-hover:border-white/20 group-hover:shadow-[0_0_50px_rgba(255,255,255,0.04)]">
+                  <motion.div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-white/[0.06] text-violet-300 ring-1 ring-white/15">
                     <ServiceIcon name={service.icon} className="h-6 w-6" />
                   </motion.div>
                   <h3 className="font-display text-lg font-semibold text-white md:text-xl">

@@ -24,14 +24,14 @@ export function GlassCard({
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
         style={{
           background:
-            "radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(139,92,246,0.08), transparent 40%)",
+            "radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255,255,255,0.04), transparent 40%)",
         }}
       />
       <motion.div
         className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
         style={{
           background:
-            "linear-gradient(135deg, rgba(139,92,246,0.3), transparent 40%, rgba(59,130,246,0.2))",
+            "linear-gradient(135deg, rgba(255,255,255,0.12), transparent 40%, rgba(45,38,55,0.15))",
           mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
           maskComposite: "exclude",
           WebkitMaskComposite: "xor",
@@ -39,7 +39,7 @@ export function GlassCard({
         }}
       />
       <motion.div
-        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-500/50 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
       />
       {children}
     </motion.div>

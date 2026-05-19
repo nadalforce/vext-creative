@@ -29,7 +29,7 @@ export function ViewfinderMark({
       aria-hidden
     >
       <motion.div
-        className="absolute left-1/2 top-1/2 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-400 shadow-[0_0_12px_rgba(139,92,246,0.8)]"
+        className="absolute left-1/2 top-1/2 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/80 shadow-[0_0_12px_rgba(255,255,255,0.35)]"
         animate={pulse ? { scale: [1, 1.3, 1] } : undefined}
         transition={pulse ? { duration: 2, repeat: Infinity } : undefined}
       />

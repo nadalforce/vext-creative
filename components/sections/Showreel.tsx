@@ -23,7 +23,7 @@ export function Showreel({ backgroundImages = [] }: ShowreelProps) {
       id="showreel"
       className="relative overflow-hidden border-t border-white/[0.04] bg-zinc-950 py-20 md:py-28"
     >
-      <GlowOrb className="left-0 top-0" color="blue" delay={1} />
+      <GlowOrb className="left-0 top-0" color="soft" delay={1} />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10">
         <SectionHeading

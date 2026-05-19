@@ -12,11 +12,11 @@ export const BRAND = {
 } as const;
 
 export const BRAND_COLORS = {
-  violet: "#7c3aed",
-  electric: "#a78bfa",
-  deep: "#1e0b3a",
-  glowViolet: "rgba(124, 58, 237, 0.5)",
-  glowBlue: "rgba(59, 130, 246, 0.25)",
+  violet: "#4a3f56",
+  electric: "#8f8498",
+  deep: "#0a090c",
+  glowViolet: "rgba(45, 38, 55, 0.35)",
+  glowSoft: "rgba(255, 255, 255, 0.06)",
 } as const;
 
 export const ATMOSPHERE_OPACITY = {

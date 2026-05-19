@@ -22,7 +22,7 @@ export function ArticleCard({ article, index = 0 }: ArticleCardProps) {
     >
       <Link
         href={`${JOURNAL_BASE}/${article.slug}`}
-        className="flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.02] ring-1 ring-white/10 transition-all duration-500 hover:border-violet-500/30 hover:shadow-[0_0_48px_rgba(124,58,237,0.15)] md:rounded-3xl"
+        className="flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.02] ring-1 ring-white/10 transition-all duration-500 hover:border-white/20 hover:shadow-[0_0_48px_rgba(255,255,255,0.05)] md:rounded-3xl"
       >
         <div className="relative aspect-[16/10] overflow-hidden bg-zinc-950">
           <Image

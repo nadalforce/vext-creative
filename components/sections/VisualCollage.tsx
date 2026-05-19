@@ -169,12 +169,12 @@ export function VisualCollage({ images }: VisualCollageProps) {
       ref={ref}
       className="relative overflow-hidden border-t border-white/[0.04] bg-black py-28 md:py-40"
     >
-      <GlowOrb className="left-1/2 top-1/3 -translate-x-1/2" color="mixed" delay={0.5} />
+      <GlowOrb className="left-1/2 top-1/3 -translate-x-1/2" color="ambient" delay={0.5} />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10">
         <SectionHeading
           label="Atölye Kareleri"
-          title="VEXT Creative Ofisimiz ve Stüdyomuzdan Seçilmiş Kareler"
+          title="Vext Creative Ofisimizden Kareler"
           description="Ofis, set, kurgu masası ve tasarım ekranından seçilmiş kareler."
           align="center"
         />

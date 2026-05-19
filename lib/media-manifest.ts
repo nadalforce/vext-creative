@@ -18,6 +18,11 @@ export const MEDIA = {
   web: ["/images/web-tasarim-nextjs.png"] as const,
   marka: ["/media/marka/marka-01.png"] as const,
   sosyalMedya: ["/media/sosyal-medya/sosyal-01.png"] as const,
+  contactShowcase: [
+    "/images/contact/contact-01.png",
+    "/images/contact/contact-02.png",
+    "/images/contact/contact-03.png",
+  ] as const,
 } as const;
 
 export function mergeMedia(serverPaths: string[], fallback: readonly string[]) {
