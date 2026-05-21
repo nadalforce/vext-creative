@@ -22,7 +22,7 @@ export function Services() {
         <SectionHeading
           label="Hizmetler"
           title="Özenle Gerçekleştirdiğimiz Hizmetler"
-          description="Video prodüksiyondan grafik tasarıma, web deneyimlerinden sosyal medya yönetimine kadar markanıza özel yaratıcı çözümler sunuyoruz."
+          description="Tüm dijital medya hizmetlerimiz."
           align="center"
         />
 

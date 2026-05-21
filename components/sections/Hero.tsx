@@ -41,13 +41,13 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
           className="mb-8 flex justify-center sm:mb-10"
         >
-          <span className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 rounded-full border border-white/10 bg-black/50 px-4 py-2 backdrop-blur-xl sm:gap-3 sm:px-6 sm:py-2.5">
-            <span className="relative flex h-2 w-2">
+          <span className="inline-flex max-w-[calc(100vw-2rem)] items-center justify-center gap-2 rounded-full border border-white/10 bg-black/50 px-3 py-2 backdrop-blur-xl sm:max-w-none sm:gap-2.5 sm:px-5 sm:py-2.5 md:gap-3 md:px-6 md:py-2.5">
+            <span className="relative flex h-2 w-2 shrink-0">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white/50 opacity-50" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-white/80" />
             </span>
-            <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-white/70 sm:text-[11px] sm:tracking-[0.28em]">
-              VEXT Medya
+            <span className="whitespace-nowrap text-center text-[7px] font-semibold uppercase leading-none tracking-[0.12em] text-white/80 min-[360px]:text-[8px] min-[400px]:text-[9px] sm:text-[10px] sm:tracking-[0.16em] md:text-[11px] md:tracking-[0.2em]">
+              VEXT DİJİTAL MEDYA AJANSI
             </span>
           </span>
         </motion.div>
@@ -63,14 +63,15 @@ export function Hero() {
         </motion.h1>
 
         <motion.p
-          className="mx-auto mt-6 max-w-[22rem] text-pretty text-[13px] leading-relaxed text-white/55 sm:mt-10 sm:max-w-2xl sm:text-sm md:text-lg"
+          className="mx-auto mt-6 max-w-[min(100%,24rem)] text-pretty text-balance text-[13px] leading-relaxed text-white/55 sm:mt-10 sm:max-w-2xl sm:text-sm md:text-lg"
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.65 }}
         >
-          Reklam filmlerinden sinematik çekimlere, video kurgudan web ve grafik
-          tasarımına kadar markanızı modern ve güçlü bir dijital kimliğe
-          dönüştürüyoruz.
+          Video prodüksiyon, reklam filmleri, drone çekimleri, web sitesi
+          tasarımı, grafik tasarım, sosyal medya ve dijital reklam yönetimiyle
+          markanızı büyütüyor, profesyonel bir dijital kimlik oluşturarak
+          tanınırlığını artırıyoruz.
         </motion.p>
 
         <motion.div

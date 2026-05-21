@@ -19,7 +19,7 @@ export const SERVICES = [
     description:
       "Profesyonel iç ve dış mekan video çekimleri gerçekleştiriyoruz.",
     showcaseDescription:
-      "İç ve dış mekan prodüksiyonlarını yalnızca çekmiyor; kurgu, renk, ses ve sinematik anlatımla markanız için etkileyici reklam filmlerine dönüştürüyoruz. Tüm içerikleri dijital platformlara uygun şekilde optimize ederek paylaşım sürecine hazır teslim ediyoruz.",
+      "İç ve dış mekan prodüksiyonlarını yalnızca çekmiyor; kurgu, renk, ses ve sinematik anlatımla markanız için etkileyici reklam filmlerine dönüştürüyoruz. Drone çekimleri, emlak tanıtım videoları, işletme, kafe ve kurum / kuruluş çekimleriyle markanızın dijital görünümünü profesyonel şekilde güçlendiriyoruz.",
     icon: "film" as const,
     mediaKey: "video-prod" as MediaCategory,
     href: "#hizmet-video-prod",
@@ -73,6 +73,8 @@ export const SERVICES = [
     title: "Sosyal Medya Yönetimi",
     description:
       "Markanızın sosyal medya süreçlerini profesyonel şekilde yönetiyoruz.",
+    showcaseDescription:
+      "Markanızın dijital dünyadaki görünürlüğünü stratejik içerik üretimi, profesyonel sosyal medya yönetimi ve performans odaklı reklam çalışmalarıyla güçlendiriyoruz.\n\nMeta (Facebook & Instagram) reklam yönetimi, hedef kitle analizi, içerik planlaması, kreatif tasarım, reels stratejileri ve dönüşüm odaklı kampanyalar ile markanızı daha fazla kişiye ulaştırıyoruz.\n\nSadece paylaşım yapmak değil; etkileşim, güven ve satış odaklı sürdürülebilir bir dijital marka kimliği oluşturuyoruz.",
     icon: "social" as const,
     mediaKey: "sosyal-medya" as MediaCategory,
     href: "#hizmet-sosyal-medya",

@@ -9,8 +9,6 @@ const FOOTER_SYMBOL = "/logo/vext-footer-logo.png";
 const FOOTER_WORDMARK = "/logo/vext-footer-wordmark.png";
 
 export function Footer() {
-  const year = new Date().getFullYear();
-
   return (
     <footer className="relative border-t border-white/[0.06] bg-black">
       <motion.div className="relative mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
@@ -34,10 +32,6 @@ export function Footer() {
                 sizes="(max-width: 768px) 200px, 248px"
               />
             </div>
-            <p className="mt-8 max-w-xs text-sm leading-relaxed text-white/40">
-              Sinematik prodüksiyon, marka kimliği ve dijital deneyimlerde
-              geleceği şekillendiriyoruz.
-            </p>
           </motion.div>
 
           <nav
@@ -89,12 +83,9 @@ export function Footer() {
           </motion.div>
         </motion.div>
 
-        <motion.div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/[0.06] pt-8 md:flex-row">
+        <motion.div className="mt-16 border-t border-white/[0.06] pt-8">
           <p className="text-xs text-white/30">
-            © {year} VEXT Medya. Tüm hakları saklıdır.
-          </p>
-          <p className="text-xs uppercase tracking-[0.2em] text-white/20">
-            Geleceği görselleştiren yaratıcı kolektif
+            © 2026 VEXT Medya. Tüm hakları saklıdır.
           </p>
         </motion.div>
       </motion.div>

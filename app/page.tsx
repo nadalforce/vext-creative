@@ -5,6 +5,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
 import { ServiceShowcases } from "@/components/sections/ServiceShowcases";
 import { About } from "@/components/sections/About";
+import { CareersJoin } from "@/components/sections/CareersJoin";
 import { Contact } from "@/components/sections/Contact";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Services />
         <ServiceShowcases />
         <About />
+        <CareersJoin />
         <Contact />
       </main>
       <Footer />

@@ -1,5 +1,5 @@
 import { BRAND } from "@/lib/brand";
-import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "@/lib/seo";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -33,7 +33,7 @@ const websiteSchema = {
 const professionalServiceSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: SITE_TITLE,
+  name: SITE_NAME,
   url: SITE_URL,
   description: SITE_DESCRIPTION,
   image: `${SITE_URL}/og-image.png`,

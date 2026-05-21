@@ -1,32 +1,48 @@
 import type { Metadata } from "next";
 import { BRAND } from "@/lib/brand";
 
-export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://vextmedya.com";
+/** Always canonical HTTPS — never http in metadata or sitemap */
+function normalizeSiteUrl(raw: string): string {
+  const trimmed = raw.trim().replace(/\/+$/, "");
+  if (trimmed.startsWith("http://")) {
+    return trimmed.replace("http://", "https://");
+  }
+  if (trimmed.startsWith("https://")) {
+    return trimmed;
+  }
+  return `https://${trimmed}`;
+}
+
+export const SITE_URL = normalizeSiteUrl(
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://vextmedya.com"
+);
 
 export const SITE_NAME = "VEXT Medya";
 
 export const SITE_TITLE =
-  "VEXT Medya — Web Tasarım & Video Prodüksiyon Ajansı";
+  "VEXT Medya | Video Prodüksiyon & Web Tasarım Ajansı";
 
 export const SITE_DESCRIPTION =
-  "VEXT Medya, web tasarımı, reklam filmi, sosyal medya yönetimi, drone çekimi ve grafik tasarım alanlarında markalara modern dijital çözümler sunan kreatif medya ajansıdır.";
+  "Video prodüksiyon, drone çekimleri, web tasarımı, grafik tasarım, sosyal medya ve dijital reklam yönetimiyle markanızı büyütüyoruz.";
 
 export const SITE_KEYWORDS = [
+  "VEXT Medya",
   "medya ajansı",
-  "web tasarım",
   "video prodüksiyon",
-  "reklam filmi",
-  "sosyal medya yönetimi",
+  "web tasarım",
   "drone çekimi",
   "grafik tasarım",
-  "VEXT Medya",
+  "sosyal medya yönetimi",
+  "dijital reklam yönetimi",
+  "reklam filmi",
   "İstanbul medya ajansı",
 ] as const;
 
 export const OG_IMAGE = "/og-image.png";
 
-const ogImageAbsolute = () => `${SITE_URL}${OG_IMAGE}`;
+export const ogImageAbsolute = () => `${SITE_URL}${OG_IMAGE}`;
+
+export const faviconUrl = () => `${SITE_URL}${BRAND.favicon}`;
 
 type PageMetadataOptions = {
   path?: string;
@@ -46,7 +62,8 @@ export function buildPageMetadata(options: PageMetadataOptions = {}): Metadata {
   const image = options.image ?? ogImageAbsolute();
 
   return {
-    title: path === "/" && !options.title ? SITE_TITLE : title,
+    metadataBase: new URL(SITE_URL),
+    title,
     description,
     keywords: [...SITE_KEYWORDS],
     alternates: { canonical },
@@ -75,7 +92,7 @@ export function buildPageMetadata(options: PageMetadataOptions = {}): Metadata {
           url: image,
           width: 1200,
           height: 630,
-          alt: title,
+          alt: SITE_NAME,
         },
       ],
     },
@@ -95,8 +112,11 @@ export const rootMetadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
   keywords: [...SITE_KEYWORDS],
-  alternates: { canonical: SITE_URL },
+  alternates: {
+    canonical: SITE_URL,
+  },
   robots: {
     index: true,
     follow: true,
@@ -109,11 +129,14 @@ export const rootMetadata: Metadata = {
     },
   },
   icons: {
-    icon: { url: BRAND.favicon, type: "image/png" },
+    icon: [
+      { url: BRAND.favicon, type: "image/png", sizes: "any" },
+      { url: BRAND.favicon, type: "image/png", sizes: "32x32" },
+    ],
     shortcut: BRAND.favicon,
-    apple: { url: BRAND.favicon, type: "image/png" },
+    apple: { url: BRAND.favicon, type: "image/png", sizes: "180x180" },
   },
-  manifest: "/site.webmanifest",
+  manifest: `${SITE_URL}/site.webmanifest`,
   openGraph: {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
@@ -123,10 +146,10 @@ export const rootMetadata: Metadata = {
     siteName: SITE_NAME,
     images: [
       {
-        url: OG_IMAGE,
+        url: ogImageAbsolute(),
         width: 1200,
         height: 630,
-        alt: SITE_TITLE,
+        alt: SITE_NAME,
       },
     ],
   },
@@ -134,9 +157,9 @@ export const rootMetadata: Metadata = {
     card: "summary_large_image",
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
-    images: [OG_IMAGE],
+    images: [ogImageAbsolute()],
   },
   other: {
-    "msapplication-TileImage": BRAND.favicon,
+    "msapplication-TileImage": faviconUrl(),
   },
 };

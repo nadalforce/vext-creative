@@ -41,9 +41,12 @@ export function ServiceShowcases() {
           sectionId={service.sectionId}
           title={service.title}
           description={
-            "showcaseDescription" in service
-              ? service.showcaseDescription
-              : service.description
+            (
+              service as {
+                showcaseDescription?: string;
+                description: string;
+              }
+            ).showcaseDescription ?? service.description
           }
           tagline={service.tagline}
           icon={service.icon}

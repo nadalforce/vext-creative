@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import type { JournalArticle } from "@/lib/journal/types";
 import { JOURNAL_BASE, JOURNAL_OG_DEFAULT, SITE_NAME, SITE_URL } from "@/lib/journal/site";
+import { SITE_DESCRIPTION } from "@/lib/seo";
 export function journalListingMetadata(): Metadata {
   const title = "VEXT Journal | Sektörden Makaleler";
   const description =
     "Video prodüksiyon, reels, marka kimliği, sosyal medya ve web tasarımına dair SEO odaklı profesyonel rehberler. VEXT Medya medya ajansı journal.";
 
   return {
+    metadataBase: new URL(SITE_URL),
     title,
     description,
     keywords: [
@@ -43,6 +45,7 @@ export function articleMetadata(article: JournalArticle): Metadata {
     : `${SITE_URL}${article.coverImage}`;
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: `${article.title} | VEXT Journal`,
     description: article.metaDescription,
     keywords: article.keywords,
@@ -137,8 +140,7 @@ export function journalListingJsonLd() {
     "@context": "https://schema.org",
     "@type": "Blog",
     name: "VEXT Journal",
-    description:
-      "VEXT Medya medya ajansının video prodüksiyon, marka ve dijital içerik odaklı editorial journal platformu.",
+    description: SITE_DESCRIPTION,
     url: `${SITE_URL}${JOURNAL_BASE}`,
     publisher: {
       "@type": "Organization",

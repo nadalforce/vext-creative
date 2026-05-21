@@ -1,19 +1,19 @@
 {
-  "name": "VEXT Medya — Web Tasarım & Video Prodüksiyon Ajansı",
+  "name": "VEXT Medya | Video Prodüksiyon & Web Tasarım Ajansı",
   "short_name": "VEXT Medya",
-  "description": "VEXT Medya, web tasarımı, reklam filmi, sosyal medya yönetimi, drone çekimi ve grafik tasarım alanlarında markalara modern dijital çözümler sunan kreatif medya ajansıdır.",
+  "description": "Video prodüksiyon, drone çekimleri, web tasarımı, grafik tasarım, sosyal medya ve dijital reklam yönetimiyle markanızı büyütüyoruz.",
   "lang": "tr",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "https://vextmedya.com/",
+  "scope": "https://vextmedya.com/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#000000",
   "icons": [
     {
       "src": "/logo/vext-symbol.png",
-      "sizes": "any",
+      "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     }
   ]
 }

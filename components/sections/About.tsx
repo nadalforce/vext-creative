@@ -5,22 +5,12 @@ import { AboutCapabilityIcon } from "@/components/ui/AboutCapabilityIcon";
 import { GlowOrb } from "@/components/ui/GlowOrb";
 
 const CAPABILITIES = [
-  {
-    line: "sinematik iç & dış mekan reklam çekimlerinden",
-    icon: "film",
-  },
-  {
-    line: "ürün tanıtımlarından",
-    icon: "product",
-  },
-  {
-    line: "sosyal medya yönetimine",
-    icon: "social",
-  },
-  {
-    line: "web tasarımdan marka kimliği oluşturmaya kadar",
-    icon: "brand",
-  },
+  { label: "Reklam Filmleri & Prodüksiyon", icon: "film" },
+  { label: "Drone & Marka Çekimleri", icon: "product" },
+  { label: "Sosyal Medya & Reklam Yönetimi", icon: "social" },
+  { label: "SEO Uyumlu Web Tasarımı & UI/UX Deneyimi", icon: "brand" },
+  { label: "Grafik Tasarım & Marka Kimliği Oluşturma", icon: "brand" },
+  { label: "Kreatif İçerik & Dijital Medya Tasarımları", icon: "social" },
 ] as const;
 
 export function About() {
@@ -67,20 +57,33 @@ export function About() {
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.85, delay: 0.1 }}
         >
-          <p className="text-lg font-medium leading-[1.65] text-white/85 md:text-xl md:leading-relaxed">
-            Temeli video kurgu ve grafik tasarıma dayanan,{" "}
-            <span className="text-white">8 yıla yakın deneyime</span> sahip
-            yaratıcı bir ekibiz.
-          </p>
+          <div className="space-y-5 text-base leading-[1.75] text-white/55 md:space-y-6 md:text-lg md:leading-relaxed">
+            <p className="font-medium leading-[1.65] text-white/85 md:leading-relaxed">
+              Video kurgu ve grafik tasarım alanında başladığımız bu yolculukta,
+              üniversite yıllarımızdan itibaren medya alanında aktif olarak eğitim
+              alırken kendimizi gerçek projelerle geliştirmeye devam ettik.
+              Yıllarca freelance olarak farklı markalara hizmet verdikten sonra,
+              edindiğimiz deneyimi daha profesyonel ve kapsamlı bir yapıya
+              taşıyarak VEXT Medya&apos;yı kurduk.
+            </p>
+            <p>
+              Bugün; reklam filmi çekimlerinden video prodüksiyona, drone
+              çekimlerinden web sitesi tasarımına, grafik tasarımdan marka
+              kimliği oluşturmaya, sosyal medya ve dijital reklam yönetimine kadar
+              markaların büyümesine katkı sağlayan yaratıcı çözümler üretiyoruz.
+            </p>
+            <p>
+              Ekibimiz; yeniliklere açık, güncel trendleri takip eden, büyüme
+              odaklı ve yaptığı işin her zaman arkasında duran yaratıcı bir
+              ekipten oluşuyor.
+            </p>
+          </div>
 
           <div className="mt-10 border-l border-violet-500/30 pl-6 md:mt-12 md:pl-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-white/40">
-              Bugün
-            </p>
-            <ul className="mt-5 space-y-4 md:space-y-[1.125rem]">
+            <ul className="space-y-4 md:space-y-[1.125rem]">
               {CAPABILITIES.map((item, i) => (
                 <motion.li
-                  key={item.line}
+                  key={item.label}
                   className="group flex min-w-0 items-start gap-3.5 md:gap-4"
                   initial={{ opacity: 0, x: -12 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -90,15 +93,12 @@ export function About() {
                   <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-white/[0.08] bg-white/[0.02] text-white/40 transition-colors duration-300 group-hover:border-white/15 group-hover:text-white/65 md:h-9 md:w-9">
                     <AboutCapabilityIcon name={item.icon} className="h-[15px] w-[15px] md:h-4 md:w-4" />
                   </span>
-                  <span className="min-w-0 flex-1 pt-1 text-base leading-snug text-white/60 md:text-[1.05rem] md:leading-[1.55]">
-                    {item.line}
+                  <span className="min-w-0 flex-1 pt-0.5 text-base font-medium leading-snug text-white/70 md:text-[1.05rem] md:leading-[1.5]">
+                    {item.label}
                   </span>
                 </motion.li>
               ))}
             </ul>
-            <p className="mt-6 text-base leading-relaxed text-white/55 md:text-lg">
-              markaların dijital dünyadaki tüm görsel dilini inşa ediyoruz.
-            </p>
           </div>
         </motion.div>
 
@@ -113,9 +113,11 @@ export function About() {
             Stüdyo · Prodüksiyon
           </p>
           <p className="mt-5 text-base leading-[1.75] text-white/55 md:text-lg md:leading-relaxed">
-            Profesyonel stüdyo ortamımızda; beyaz perde, yeşil perde, ürün
-            çekimi ve yaratıcı prodüksiyon altyapısıyla premium içerikler
-            üretiyoruz.
+            Stüdyo ortamımızda; beyaz perde, yeşil perde, ürün tanıtım
+            çekimleri, e-ticaret ürün çekimleri ve yaratıcı reklam
+            prodüksiyonlarıyla markanıza özel premium içerikler üretiyoruz.
+            Sosyal medya, dijital reklam ve marka kimliği süreçlerine uygun
+            profesyonel içerik çözümleri sunuyoruz.
           </p>
         </motion.div>
 

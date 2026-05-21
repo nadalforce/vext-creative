@@ -98,15 +98,17 @@ export function ServiceShowcaseSection({
           )
         )}
 
-        <motion.p
-          className={`max-w-2xl text-base leading-relaxed text-white/55 md:text-lg ${hasVisuals ? "" : "mt-2"}`}
+        <motion.div
+          className={`max-w-2xl space-y-5 text-base leading-[1.75] text-white/55 md:space-y-6 md:text-lg md:leading-relaxed ${hasVisuals ? "" : "mt-2"}`}
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          {description}
-        </motion.p>
+          {description.split(/\n\n+/).map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </motion.div>
 
         <motion.a
           href="#contact"
