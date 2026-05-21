@@ -10,7 +10,10 @@ import { NAV_LINKS } from "@/lib/constants";
 import { isRouteLink, resolveNavHref } from "@/lib/nav";
 
 const navLinkClass =
-  "group relative shrink-0 whitespace-nowrap text-[8px] font-medium uppercase tracking-[0.08em] text-white/55 transition-colors duration-300 hover:text-white min-[380px]:text-[9px] min-[400px]:text-[10px] sm:text-[11px] md:text-[13px] md:tracking-[0.12em]";
+  "group relative shrink-0 whitespace-nowrap text-[6px] font-medium uppercase tracking-[0.05em] text-white/55 transition-colors duration-300 hover:text-white min-[360px]:text-[7px] min-[380px]:text-[7.5px] min-[400px]:text-[8px] sm:text-[9px] md:text-[13px] md:tracking-[0.12em]";
+
+const ctaClass =
+  "relative z-10 inline-flex shrink-0 items-center self-center rounded-full border border-white/15 bg-white/[0.06] text-white backdrop-blur-md transition-all duration-300 hover:border-white/35 hover:bg-white/10 hover:shadow-[0_0_40px_rgba(255,255,255,0.08)] px-2 py-1 text-[6px] font-semibold uppercase tracking-[0.04em] min-[360px]:px-2.5 min-[360px]:text-[7px] min-[400px]:px-3 min-[400px]:py-1.5 min-[400px]:text-[8px] sm:px-4 sm:py-2 sm:text-[9px] md:ml-auto md:px-7 md:py-2.5 md:text-[13px] md:tracking-[0.1em]";
 
 function NavItem({
   href,
@@ -56,7 +59,7 @@ export function Header() {
 
   return (
     <motion.header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
+      className={`fixed top-0 left-0 right-0 z-50 overflow-x-hidden transition-all duration-700 ${
         scrolled
           ? "border-b border-white/[0.06] bg-black/70 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.4)]"
           : "bg-gradient-to-b from-black/80 via-black/20 to-transparent"
@@ -65,11 +68,11 @@ export function Header() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
     >
-      <div className="relative mx-auto flex max-w-7xl items-center px-6 py-4 md:px-10 md:py-5 lg:px-12 xl:px-14">
+      <div className="relative mx-auto flex max-w-7xl items-center gap-1 overflow-hidden px-2 py-2.5 min-[360px]:gap-1.5 min-[360px]:px-2.5 sm:gap-2 sm:px-4 sm:py-3 md:gap-0 md:px-10 md:py-5 lg:px-12 xl:px-14">
         <Link
           href={homeHref}
           aria-label={BRAND.name}
-          className="relative z-10 flex shrink-0 items-center bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500/50"
+          className="relative z-10 flex w-[58px] shrink-0 items-center bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500/50"
         >
           <Image
             src={BRAND.symbol}
@@ -82,11 +85,12 @@ export function Header() {
           />
         </Link>
 
+        {/* Mobile/tablet: flex between logo & CTA — md+: centered overlay (desktop unchanged) */}
         <nav
-          className="pointer-events-none absolute inset-0 flex items-center justify-center"
+          className="relative z-[1] flex min-w-0 flex-1 items-center justify-center overflow-hidden md:pointer-events-none md:absolute md:inset-0 md:z-auto md:overflow-visible"
           aria-label="Ana navigasyon"
         >
-          <div className="pointer-events-auto flex max-w-[calc(100%-7.5rem)] items-center justify-center gap-1.5 min-[380px]:max-w-[calc(100%-8.25rem)] min-[380px]:gap-2 min-[400px]:max-w-[calc(100%-9rem)] min-[400px]:gap-2.5 sm:max-w-[calc(100%-11rem)] sm:gap-4 md:max-w-none md:gap-8 lg:gap-10 xl:gap-12">
+          <div className="pointer-events-auto flex min-w-0 max-w-full items-center justify-center gap-px min-[360px]:gap-1 min-[400px]:gap-1.5 sm:gap-2.5 md:max-w-none md:gap-8 lg:gap-10 xl:gap-12">
             {NAV_LINKS.map((link) => (
               <NavItem
                 key={link.href}
@@ -98,10 +102,7 @@ export function Header() {
           </div>
         </nav>
 
-        <a
-          href={contactHref}
-          className="relative z-10 ml-auto inline-flex shrink-0 items-center self-center rounded-full border border-white/15 bg-white/[0.06] px-3 py-1.5 text-[8px] font-semibold uppercase tracking-[0.06em] text-white backdrop-blur-md transition-all duration-300 hover:border-white/35 hover:bg-white/10 hover:shadow-[0_0_40px_rgba(255,255,255,0.08)] min-[380px]:px-3.5 min-[380px]:text-[9px] min-[400px]:px-4 min-[400px]:py-2 min-[400px]:text-[10px] sm:px-6 sm:py-2.5 sm:text-[11px] md:px-7 md:text-[13px] md:tracking-[0.1em]"
-        >
+        <a href={contactHref} className={`${ctaClass} ml-auto shrink-0`}>
           Proje Başlat
         </a>
       </div>
