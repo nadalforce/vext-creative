@@ -9,11 +9,12 @@ import { BRAND } from "@/lib/brand";
 import { NAV_LINKS } from "@/lib/constants";
 import { isRouteLink, resolveNavHref } from "@/lib/nav";
 
+/** Mobile-first; md: = desktop (unchanged) */
 const navLinkClass =
-  "group relative shrink-0 whitespace-nowrap text-[6px] font-medium uppercase tracking-[0.05em] text-white/55 transition-colors duration-300 hover:text-white min-[360px]:text-[7px] min-[380px]:text-[7.5px] min-[400px]:text-[8px] sm:text-[9px] md:text-[13px] md:tracking-[0.12em]";
+  "group relative shrink-0 whitespace-nowrap text-[7px] font-medium uppercase tracking-[0.06em] text-white/55 transition-colors duration-300 hover:text-white min-[380px]:text-[7.5px] min-[420px]:text-[8px] md:text-[13px] md:tracking-[0.12em]";
 
 const ctaClass =
-  "relative z-10 inline-flex shrink-0 items-center self-center rounded-full border border-white/15 bg-white/[0.06] text-white backdrop-blur-md transition-all duration-300 hover:border-white/35 hover:bg-white/10 hover:shadow-[0_0_40px_rgba(255,255,255,0.08)] px-2 py-1 text-[6px] font-semibold uppercase tracking-[0.04em] min-[360px]:px-2.5 min-[360px]:text-[7px] min-[400px]:px-3 min-[400px]:py-1.5 min-[400px]:text-[8px] sm:px-4 sm:py-2 sm:text-[9px] md:ml-auto md:px-7 md:py-2.5 md:text-[13px] md:tracking-[0.1em]";
+  "relative z-10 ml-auto inline-flex shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/[0.06] px-2.5 py-1.5 text-[7px] font-semibold uppercase tracking-[0.05em] text-white backdrop-blur-md transition-all duration-300 hover:border-white/35 hover:bg-white/10 hover:shadow-[0_0_40px_rgba(255,255,255,0.08)] min-[400px]:px-3 min-[400px]:text-[8px] md:px-7 md:py-2.5 md:text-[13px] md:tracking-[0.1em]";
 
 function NavItem({
   href,
@@ -68,11 +69,11 @@ export function Header() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
     >
-      <div className="relative mx-auto flex max-w-7xl items-center gap-1 overflow-hidden px-2 py-2.5 min-[360px]:gap-1.5 min-[360px]:px-2.5 sm:gap-2 sm:px-4 sm:py-3 md:gap-0 md:px-10 md:py-5 lg:px-12 xl:px-14">
+      <div className="relative mx-auto flex max-w-7xl items-center justify-between gap-2 overflow-hidden px-3 py-2 min-[360px]:gap-2.5 min-[360px]:px-3.5 md:gap-0 md:justify-normal md:px-10 md:py-5 lg:px-12 xl:px-14">
         <Link
           href={homeHref}
           aria-label={BRAND.name}
-          className="relative z-10 flex w-[58px] shrink-0 items-center bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500/50"
+          className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500/50 md:h-[58px] md:w-[58px]"
         >
           <Image
             src={BRAND.symbol}
@@ -80,17 +81,17 @@ export function Header() {
             width={58}
             height={58}
             priority
-            className="object-contain"
+            className="h-full w-full object-contain md:h-[58px] md:w-[58px]"
             style={{ background: "transparent" }}
           />
         </Link>
 
-        {/* Mobile/tablet: flex between logo & CTA — md+: centered overlay (desktop unchanged) */}
+        {/* Below md: flex row — md+: centered overlay (desktop unchanged) */}
         <nav
-          className="relative z-[1] flex min-w-0 flex-1 items-center justify-center overflow-hidden md:pointer-events-none md:absolute md:inset-0 md:z-auto md:overflow-visible"
+          className="relative z-[1] flex min-w-0 flex-1 items-center justify-center overflow-hidden px-0.5 md:pointer-events-none md:absolute md:inset-0 md:z-auto md:flex-none md:overflow-visible md:px-0"
           aria-label="Ana navigasyon"
         >
-          <div className="pointer-events-auto flex min-w-0 max-w-full items-center justify-center gap-px min-[360px]:gap-1 min-[400px]:gap-1.5 sm:gap-2.5 md:max-w-none md:gap-8 lg:gap-10 xl:gap-12">
+          <div className="pointer-events-auto flex min-w-0 max-w-full items-center justify-center gap-1 min-[360px]:gap-1.5 min-[400px]:gap-2 md:max-w-none md:gap-8 lg:gap-10 xl:gap-12">
             {NAV_LINKS.map((link) => (
               <NavItem
                 key={link.href}
@@ -102,7 +103,7 @@ export function Header() {
           </div>
         </nav>
 
-        <a href={contactHref} className={`${ctaClass} ml-auto shrink-0`}>
+        <a href={contactHref} className={ctaClass}>
           Proje Başlat
         </a>
       </div>
