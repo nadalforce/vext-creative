@@ -26,7 +26,7 @@ export const content: ContentBlock[] = joinContent(
     ]),
   section("sonuc-isik", "Sonuç", [
       "Işık yatırımı, lens yatırımı kadar değerlidir.",
-      "VEXT Creative çekim günü ışık ekibini yönetir.",
+      "VEXT Medya çekim günü ışık ekibini yönetir.",
       "Sinematik prodüksiyonunuz için bizimle iletişime geçin.",
     ])
 );
@@ -37,7 +37,7 @@ export const faq: JournalFAQ[] = defineFaq([
     "answer": "LED esnek ve verimli; renk doğruluğu modeline göre değişir. Proje ihtiyacına göre seçilir."
   },
   {
-    "question": "VEXT Creative ile çalışmak ne katar?",
+    "question": "VEXT Medya ile çalışmak ne katar?",
     "answer": "Konseptten teslimata aynı görsel dil, profesyonel ekip ve ölçülebilir süreç. Video prodüksiyon, sosyal medya yönetimi ve marka kimliği paralel yürütülür."
   }
 ]);

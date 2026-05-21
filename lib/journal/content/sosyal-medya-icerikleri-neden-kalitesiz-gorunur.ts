@@ -22,7 +22,7 @@ export const content: ContentBlock[] = joinContent(
   section("marka-uyum", "Marka Uyumu ve Güven", [
       "Tutarlı renk ve tipografi güven oluşturur. Web tasarımı ile sosyal profil aynı dili konuşmalıdır.",
       "Kullanıcı yorumlarına görsel kalite yansır. Kaliteli içerik etkileşimi besler.",
-      "VEXT Creative sosyal medya yönetimini prodüksiyonla birleştirir.",
+      "VEXT Medya sosyal medya yönetimini prodüksiyonla birleştirir.",
     ]),
   section("sonuc-sosyal", "Sonuç", [
       "Kalite tesadüf değil süreçtir. Küçük iyileştirmeler bile algıyı değiştirir.",
@@ -41,7 +41,7 @@ export const faq: JournalFAQ[] = defineFaq([
     "answer": "Bazı formatlar için evet; kampanya dönemlerinde profesyonel prodüksiyon fark yaratır."
   },
   {
-    "question": "VEXT Creative ile çalışmak ne katar?",
+    "question": "VEXT Medya ile çalışmak ne katar?",
     "answer": "Konseptten teslimata aynı görsel dil, profesyonel ekip ve ölçülebilir süreç. Video prodüksiyon, sosyal medya yönetimi ve marka kimliği paralel yürütülür."
   }
 ]);

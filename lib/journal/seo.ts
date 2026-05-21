@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import type { JournalArticle } from "@/lib/journal/types";
 import { JOURNAL_BASE, JOURNAL_OG_DEFAULT, SITE_NAME, SITE_URL } from "@/lib/journal/site";
-
 export function journalListingMetadata(): Metadata {
   const title = "VEXT Journal | Sektörden Makaleler";
   const description =
-    "Video prodüksiyon, reels, marka kimliği, sosyal medya ve web tasarımına dair SEO odaklı profesyonel rehberler. VEXT Creative medya ajansı journal.";
+    "Video prodüksiyon, reels, marka kimliği, sosyal medya ve web tasarımına dair SEO odaklı profesyonel rehberler. VEXT Medya medya ajansı journal.";
 
   return {
     title,
@@ -16,7 +15,7 @@ export function journalListingMetadata(): Metadata {
       "sinematik video çekimi",
       "reels video teknikleri",
       "marka kimliği",
-      "VEXT Creative",
+      "VEXT Medya",
     ],
     alternates: { canonical: `${SITE_URL}${JOURNAL_BASE}` },
     openGraph: {
@@ -139,7 +138,7 @@ export function journalListingJsonLd() {
     "@type": "Blog",
     name: "VEXT Journal",
     description:
-      "VEXT Creative medya ajansının video prodüksiyon, marka ve dijital içerik odaklı editorial journal platformu.",
+      "VEXT Medya medya ajansının video prodüksiyon, marka ve dijital içerik odaklı editorial journal platformu.",
     url: `${SITE_URL}${JOURNAL_BASE}`,
     publisher: {
       "@type": "Organization",

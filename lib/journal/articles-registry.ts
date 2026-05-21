@@ -23,7 +23,7 @@ const DEFINITIONS: ArticleDef[] = [
     slug: "sinematik-video-cekim-teknikleri",
     title: "Sinematik Video Çekimi Nasıl Yapılır? Profesyonel Rehber",
     metaDescription:
-      "Sinematik video çekimi teknikleri: ışık, lens, hareket ve kurgu. İç ve dış mekan profesyonel video prodüksiyon rehberi | VEXT Creative.",
+      "Sinematik video çekimi teknikleri: ışık, lens, hareket ve kurgu. İç ve dış mekan profesyonel video prodüksiyon rehberi | VEXT Medya.",
     keywords: [
       "sinematik video çekimi",
       "sinematik çekim",
@@ -35,7 +35,7 @@ const DEFINITIONS: ArticleDef[] = [
     excerpt:
       "Sinematik görünüm tesadüf değildir: ışık, lens, hareket ve kurgu aynı dilde konuşmalıdır.",
     publishedAt: "2026-03-01T09:00:00+03:00",
-    author: "VEXT Creative Ekibi",
+    author: "VEXT Medya Ekibi",
     authorRole: "Video Prodüksiyon",
     coverImage: "/media/journal/sinematik-video-cekim-teknikleri.jpg",
     coverImageAlt:
@@ -55,7 +55,7 @@ const DEFINITIONS: ArticleDef[] = [
     slug: "reels-video-profesyonel-gorunum",
     title: "Profesyonel Reels Video Teknikleri | Sinematik Kısa İçerik",
     metaDescription:
-      "Profesyonel reels video teknikleri: ışık, hook, kurgu ve ses. Sosyal medya için sinematik dikey video rehberi | VEXT Creative dijital medya ajansı.",
+      "Profesyonel reels video teknikleri: ışık, hook, kurgu ve ses. Sosyal medya için sinematik dikey video rehberi | VEXT Medya dijital medya ajansı.",
     keywords: [
       "reels video",
       "profesyonel reels",
@@ -67,7 +67,7 @@ const DEFINITIONS: ArticleDef[] = [
     excerpt:
       "Dikey formatta bile sinematik kalite mümkün — doğru kadraj, ışık ve ilk 3 saniye kuralı.",
     publishedAt: "2026-02-22T10:00:00+03:00",
-    author: "VEXT Creative Ekibi",
+    author: "VEXT Medya Ekibi",
     authorRole: "Sosyal Medya & Video",
     coverImage: "/media/journal/reels-video-profesyonel-gorunum.jpg",
     coverImageAlt:
@@ -85,7 +85,7 @@ const DEFINITIONS: ArticleDef[] = [
     slug: "video-kurgu-yaparken-yapilan-hatalar",
     title: "Video Kurgu Yaparken Yapılan Hatalar ve Profesyonel Çözümler",
     metaDescription:
-      "Video kurgu sürecinde sık yapılan hatalar, renk düzenleme ve ses miksajı çözümleri. Post prodüksiyon rehberi | VEXT Creative.",
+      "Video kurgu sürecinde sık yapılan hatalar, renk düzenleme ve ses miksajı çözümleri. Post prodüksiyon rehberi | VEXT Medya.",
     keywords: [
       "video kurgu",
       "post prodüksiyon",
@@ -96,7 +96,7 @@ const DEFINITIONS: ArticleDef[] = [
     excerpt:
       "Zayıf ritim, aşırı efekt ve ses dengesizliği en sık görülen üç kurgu hatasıdır.",
     publishedAt: "2026-02-15T11:00:00+03:00",
-    author: "VEXT Creative Ekibi",
+    author: "VEXT Medya Ekibi",
     authorRole: "Post Prodüksiyon",
     coverImage: "/media/journal/video-kurgu-yaparken-yapilan-hatalar.jpg",
     coverImageAlt:
@@ -111,7 +111,7 @@ const DEFINITIONS: ArticleDef[] = [
     slug: "marka-kimligi-nasil-olusturulur",
     title: "Marka Kimliği Oluşturma Rehberi | Kurumsal Görsel Dil",
     metaDescription:
-      "Marka kimliği nasıl oluşturulur? Logo, renk, tipografi ve görsel dil adımları. Profesyonel marka rehberi | VEXT Creative.",
+      "Marka kimliği nasıl oluşturulur? Logo, renk, tipografi ve görsel dil adımları. Profesyonel marka rehberi | VEXT Medya.",
     keywords: [
       "marka kimliği",
       "kurumsal kimlik",
@@ -122,7 +122,7 @@ const DEFINITIONS: ArticleDef[] = [
     excerpt:
       "Güçlü marka kimliği logo değil; tutarlı bir görsel ve sözel sistemdir.",
     publishedAt: "2026-02-08T09:30:00+03:00",
-    author: "VEXT Creative Ekibi",
+    author: "VEXT Medya Ekibi",
     authorRole: "Marka Stratejisi",
     coverImage: "/media/journal/marka-kimligi-nasil-olusturulur.jpg",
     coverImageAlt:
@@ -151,7 +151,7 @@ const DEFINITIONS: ArticleDef[] = [
     excerpt:
       "Düşük ışık, tutarsız filtreler ve zayıf planlama içerikleri anında ucuz gösterir.",
     publishedAt: "2026-01-28T14:00:00+03:00",
-    author: "VEXT Creative Ekibi",
+    author: "VEXT Medya Ekibi",
     authorRole: "Sosyal Medya",
     coverImage: "/media/journal/sosyal-medya-icerikleri-neden-kalitesiz-gorunur.jpg",
     coverImageAlt:
@@ -166,7 +166,7 @@ const DEFINITIONS: ArticleDef[] = [
     slug: "web-tasariminda-kullanici-deneyimi",
     title: "Web Tasarımında Kullanıcı Deneyimi (UX) Rehberi",
     metaDescription:
-      "Web tasarımında kullanıcı deneyimi: hız, navigasyon, mobil uyum ve dönüşüm. Modern web tasarımı rehberi | VEXT Creative.",
+      "Web tasarımında kullanıcı deneyimi: hız, navigasyon, mobil uyum ve dönüşüm. Modern web tasarımı rehberi | VEXT Medya.",
     keywords: [
       "web tasarımı",
       "kullanıcı deneyimi",
@@ -177,7 +177,7 @@ const DEFINITIONS: ArticleDef[] = [
     excerpt:
       "Güzel arayüz yeterli değil; kullanıcı yolculuğu ve performans dönüşümü belirler.",
     publishedAt: "2026-01-20T10:00:00+03:00",
-    author: "VEXT Creative Ekibi",
+    author: "VEXT Medya Ekibi",
     authorRole: "Web Tasarım",
     coverImage: "/media/journal/web-tasariminda-kullanici-deneyimi.jpg",
     coverImageAlt:
@@ -192,7 +192,7 @@ const DEFINITIONS: ArticleDef[] = [
     slug: "profesyonel-urun-cekimi-teknikleri",
     title: "Profesyonel Ürün Çekimi Teknikleri | E-Ticaret Görsel Rehberi",
     metaDescription:
-      "Profesyonel ürün çekimi: ışık, arka plan, açı ve retouch. E-ticaret ve reklam için görsel prodüksiyon | VEXT Creative.",
+      "Profesyonel ürün çekimi: ışık, arka plan, açı ve retouch. E-ticaret ve reklam için görsel prodüksiyon | VEXT Medya.",
     keywords: [
       "ürün çekimi",
       "reklam çekimi",
@@ -203,7 +203,7 @@ const DEFINITIONS: ArticleDef[] = [
     excerpt:
       "Ürünün değerini yansıtan çekim; doğru ışık ve arka plan seçimiyle başlar.",
     publishedAt: "2026-01-12T09:00:00+03:00",
-    author: "VEXT Creative Ekibi",
+    author: "VEXT Medya Ekibi",
     authorRole: "Görsel Prodüksiyon",
     coverImage: "/media/journal/profesyonel-urun-cekimi-teknikleri.jpg",
     coverImageAlt:
@@ -229,7 +229,7 @@ const DEFINITIONS: ArticleDef[] = [
     excerpt:
       "Işık, videonun duygusunu belirleyen en güçlü araçtır — doğru kurulum fark yaratır.",
     publishedAt: "2026-01-05T11:30:00+03:00",
-    author: "VEXT Creative Ekibi",
+    author: "VEXT Medya Ekibi",
     authorRole: "Işık & Kamera",
     coverImage: "/media/journal/video-produksiyonunda-isik-kullanimi.jpg",
     coverImageAlt:
@@ -247,7 +247,7 @@ const DEFINITIONS: ArticleDef[] = [
     slug: "drone-cekimlerinde-sinematik-gorunum",
     title: "Drone Çekimlerinde Sinematik Görünüm | Hava Çekimi Rehberi",
     metaDescription:
-      "Drone ile sinematik hava çekimi: hareket, ışık ve kurgu ipuçları. Profesyonel drone prodüksiyon rehberi | VEXT Creative.",
+      "Drone ile sinematik hava çekimi: hareket, ışık ve kurgu ipuçları. Profesyonel drone prodüksiyon rehberi | VEXT Medya.",
     keywords: [
       "drone çekimi",
       "sinematik çekim",
@@ -258,7 +258,7 @@ const DEFINITIONS: ArticleDef[] = [
     excerpt:
       "Yavaş, kontrollü hareket ve doğru irtifa sinematik drone görüntüsünün anahtarıdır.",
     publishedAt: "2025-12-20T09:00:00+03:00",
-    author: "VEXT Creative Ekibi",
+    author: "VEXT Medya Ekibi",
     authorRole: "Hava Çekimi",
     coverImage: "/media/journal/drone-cekimlerinde-sinematik-gorunum.jpg",
     coverImageAlt:
@@ -284,7 +284,7 @@ const DEFINITIONS: ArticleDef[] = [
     excerpt:
       "Ofis, mağaza veya stüdyo — mekânın hikâyesi doğru planla anlatılır.",
     publishedAt: "2025-12-10T10:00:00+03:00",
-    author: "VEXT Creative Ekibi",
+    author: "VEXT Medya Ekibi",
     authorRole: "Reklam Prodüksiyon",
     coverImage: "/media/journal/ic-mekan-reklam-cekimi-rehberi.jpg",
     coverImageAlt:

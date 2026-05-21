@@ -47,7 +47,7 @@ export function Hero() {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-white/80" />
             </span>
             <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-white/70 sm:text-[11px] sm:tracking-[0.28em]">
-              VEXT Creative | Medya Ajansı
+              VEXT Medya
             </span>
           </span>
         </motion.div>

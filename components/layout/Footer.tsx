@@ -91,7 +91,7 @@ export function Footer() {
 
         <motion.div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/[0.06] pt-8 md:flex-row">
           <p className="text-xs text-white/30">
-            © {year} VEXT Creative. Tüm hakları saklıdır.
+            © {year} VEXT Medya. Tüm hakları saklıdır.
           </p>
           <p className="text-xs uppercase tracking-[0.2em] text-white/20">
             Geleceği görselleştiren yaratıcı kolektif

@@ -25,7 +25,7 @@ export const content: ContentBlock[] = joinContent(
       "Güven unsurları: referans, ekip, iletişim bilgisi.",
     ]),
   section("sonuc-web", "Sonuç", [
-      "UX yatırımı dönüşümü artırır. VEXT Creative web tasarımını marka kimliği ile birlikte kurgular.",
+      "UX yatırımı dönüşümü artırır. VEXT Medya web tasarımını marka kimliği ile birlikte kurgular.",
       "Hızlı, anlaşılır ve sinematik bir site güven verir.",
       "Web projenizi birlikte planlayalım.",
     ])
@@ -41,7 +41,7 @@ export const faq: JournalFAQ[] = defineFaq([
     "answer": "Hız ve yapılandırılmış içerik sıralamayı destekler."
   },
   {
-    "question": "VEXT Creative ile çalışmak ne katar?",
+    "question": "VEXT Medya ile çalışmak ne katar?",
     "answer": "Konseptten teslimata aynı görsel dil, profesyonel ekip ve ölçülebilir süreç. Video prodüksiyon, sosyal medya yönetimi ve marka kimliği paralel yürütülür."
   }
 ]);

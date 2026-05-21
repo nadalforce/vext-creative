@@ -1,19 +1,25 @@
 {
-  "name": "VEXT Creative | Medya Ajansı",
-  "short_name": "VEXT",
+  "name": "VEXT Medya — Web Tasarım & Video Prodüksiyon Ajansı",
+  "short_name": "VEXT Medya",
+  "description": "VEXT Medya, web tasarımı, reklam filmi, sosyal medya yönetimi, drone çekimi ve grafik tasarım alanlarında markalara modern dijital çözümler sunan kreatif medya ajansıdır.",
+  "lang": "tr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/android-chrome-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ],
-  "theme_color": "#000000",
-  "background_color": "#000000",
-  "display": "standalone"
+  ]
 }

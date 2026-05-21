@@ -1,7 +1,7 @@
 import { BRAND } from "@/lib/brand";
+import { SITE_URL as SEO_SITE_URL } from "@/lib/seo";
 
-export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://vextmedya.com";
+export const SITE_URL = SEO_SITE_URL;
 
 export const JOURNAL_BASE = "/journal";
 

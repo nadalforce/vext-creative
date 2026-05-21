@@ -18,7 +18,7 @@ export function ArticleCTA() {
       </h2>
       <p className="relative mx-auto mt-4 max-w-xl text-sm text-white/50 md:text-base">
         Projenizi birlikte planlayalım. Video prodüksiyon, sosyal medya yönetimi,
-        grafik tasarım ve web deneyimleri için VEXT Creative ekibi yanınızda.
+        grafik tasarım ve web deneyimleri için VEXT Medya ekibi yanınızda.
       </p>
       <Link
         href="/#contact"

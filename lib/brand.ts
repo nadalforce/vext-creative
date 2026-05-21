@@ -1,4 +1,4 @@
-/** Official VEXT Creative brand assets — use only these paths */
+/** Official VEXT Medya brand assets — use only these paths */
 export const BRAND = {
   /** Navbar / icon mark */
   symbol: "/logo/vext-symbol.png",
@@ -8,7 +8,7 @@ export const BRAND = {
   logoSvg: "/vext-logo.svg",
   /** Hero atmospheric watermark */
   logoFull: "/logo/vext-logo.png",
-  name: "VEXT Creative",
+  name: "VEXT Medya",
 } as const;
 
 export const BRAND_COLORS = {

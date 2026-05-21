@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
+import { BRAND } from "@/lib/brand";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { GlowOrb } from "@/components/ui/GlowOrb";
@@ -74,15 +76,17 @@ export function Contact() {
                 ease: [0.22, 1, 0.36, 1],
               }}
             >
-              <figure className="photo-frame w-full overflow-hidden rounded-2xl bg-black ring-1 ring-white/15 shadow-[0_20px_60px_rgba(0,0,0,0.45)] md:rounded-3xl">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <figure className="photo-frame relative w-full overflow-hidden rounded-2xl bg-black ring-1 ring-white/15 shadow-[0_20px_60px_rgba(0,0,0,0.45)] md:rounded-3xl">
+                <Image
                   src={src}
-                  alt={`VEXT Creative stüdyo ${i + 1}`}
+                  alt={`${BRAND.name} stüdyo görseli ${i + 1}`}
+                  width={1600}
+                  height={1000}
+                  sizes="(max-width: 768px) 100vw, 900px"
                   className="photo-frame__img block h-auto w-full max-w-full object-contain object-center"
+                  priority={i === 0}
                   loading={i === 0 ? "eager" : "lazy"}
-                  decoding="async"
-                  draggable={false}
+                  quality={82}
                 />
               </figure>
             </motion.li>

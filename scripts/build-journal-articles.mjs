@@ -51,7 +51,7 @@ function buildArticle(sections, intro) {
 
 // Shared FAQ tail
 const agencyFaq = {
-  question: "VEXT Creative ile çalışmak ne katar?",
+  question: "VEXT Medya ile çalışmak ne katar?",
   answer:
     "Konseptten teslimata aynı görsel dil, profesyonel ekip ve ölçülebilir süreç. Video prodüksiyon, sosyal medya yönetimi ve marka kimliği paralel yürütülür.",
 };
@@ -64,7 +64,7 @@ const articles = {
   "video-kurgu-yaparken-yapilan-hatalar": {
     intro: [
       "Video kurgu, çekimden sonra hikâyenin gerçekten anlatıldığı masadır. Ham görüntü güçlü olsa bile zayıf montaj, markanızı amatör gösterir ve izleyici güvenini düşürür.",
-      "Post prodüksiyon sürecinde ritim, ses ve renk aynı anda düşünülmelidir. VEXT Creative ekibi, profesyonel video prodüksiyon çıktısını platforma göre optimize ederek teslim eder.",
+      "Post prodüksiyon sürecinde ritim, ses ve renk aynı anda düşünülmelidir. VEXT Medya ekibi, profesyonel video prodüksiyon çıktısını platforma göre optimize ederek teslim eder.",
       "Bu rehberde en sık yapılan kurgu hatalarını ve sinematik çekim kalitesini koruyan çözümleri sade Türkçe ile paylaşıyoruz.",
     ],
     sections: [
@@ -118,7 +118,7 @@ const articles = {
         title: "Profesyonel Post Prodüksiyon Kararı",
         paragraphs: [
           "Kurgu masası, markanızın son imza noktasıdır. Deneyimli ekip, hataları çekim sonrası bile düzeltebilir.",
-          "VEXT Creative, video kurgu sürecini marka hedeflerinize göre yönetir ve teslim setlerini netleştirir.",
+          "VEXT Medya, video kurgu sürecini marka hedeflerinize göre yönetir ve teslim setlerini netleştirir.",
           "Projenizi birlikte planlayarak sinematik çekim yatırımınızın karşılığını alın.",
         ],
       },
@@ -143,7 +143,7 @@ const articles = {
     intro: [
       "Marka kimliği, müşterinin sizi hatırlama biçimidir. Logo tek başına kimlik değildir; renk, tipografi, ses tonu ve görsel tutarlılık birlikte güven inşa eder.",
       "Küçük işletmeler de kurumsal firmalar kadar tutarlı görünmek zorundadır çünkü dijital ortamda ilk izlenim saniyeler içinde oluşur.",
-      "VEXT Creative olarak marka kimliği sürecini araştırma, konumlandırma ve uygulama üçlüsüyle yürütüyoruz. Bu rehber, adım adım net bir yol haritası sunar.",
+      "VEXT Medya olarak marka kimliği sürecini araştırma, konumlandırma ve uygulama üçlüsüyle yürütüyoruz. Bu rehber, adım adım net bir yol haritası sunar.",
     ],
     sections: [
       sec("arastirma", "Araştırma ve Konumlandırma", [
@@ -168,7 +168,7 @@ const articles = {
       ]),
       sec("sonuc-marka", "Sonuç: Güçlü Kimlik Yatırımı", [
         "Marka kimliği tek seferlik değil, yaşayan bir sistemdir.",
-        "VEXT Creative markanızı sinematik çekim ve dijital kanallarda aynı dilde taşır.",
+        "VEXT Medya markanızı sinematik çekim ve dijital kanallarda aynı dilde taşır.",
         "Projenizi birlikte planlayarak görsel güveninizi kalıcı hale getirin.",
       ]),
     ],
@@ -209,7 +209,7 @@ const articles = {
       sec("marka-uyum", "Marka Uyumu ve Güven", [
         "Tutarlı renk ve tipografi güven oluşturur. Web tasarımı ile sosyal profil aynı dili konuşmalıdır.",
         "Kullanıcı yorumlarına görsel kalite yansır. Kaliteli içerik etkileşimi besler.",
-        "VEXT Creative sosyal medya yönetimini prodüksiyonla birleştirir.",
+        "VEXT Medya sosyal medya yönetimini prodüksiyonla birleştirir.",
       ]),
       sec("sonuc-sosyal", "Sonuç", [
         "Kalite tesadüf değil süreçtir. Küçük iyileştirmeler bile algıyı değiştirir.",
@@ -257,7 +257,7 @@ const articles = {
         "Güven unsurları: referans, ekip, iletişim bilgisi.",
       ]),
       sec("sonuc-web", "Sonuç", [
-        "UX yatırımı dönüşümü artırır. VEXT Creative web tasarımını marka kimliği ile birlikte kurgular.",
+        "UX yatırımı dönüşümü artırır. VEXT Medya web tasarımını marka kimliği ile birlikte kurgular.",
         "Hızlı, anlaşılır ve sinematik bir site güven verir.",
         "Web projenizi birlikte planlayalım.",
       ]),
@@ -303,7 +303,7 @@ const articles = {
       ]),
       sec("sonuc-urun", "Sonuç", [
         "Ürün görseli satış ekibinizin sessiz temsilcisidir.",
-        "VEXT Creative stüdyo ve lokasyon çekimlerini yönetir.",
+        "VEXT Medya stüdyo ve lokasyon çekimlerini yönetir.",
         "Katalog ve kampanya görsellerinizi birlikte üretelim.",
       ]),
     ],
@@ -344,7 +344,7 @@ const articles = {
       ]),
       sec("sonuc-isik", "Sonuç", [
         "Işık yatırımı, lens yatırımı kadar değerlidir.",
-        "VEXT Creative çekim günü ışık ekibini yönetir.",
+        "VEXT Medya çekim günü ışık ekibini yönetir.",
         "Sinematik prodüksiyonunuz için bizimle iletişime geçin.",
       ]),
     ],
@@ -385,7 +385,7 @@ const articles = {
       ]),
       sec("sonuc-drone", "Sonuç", [
         "Hava çekimi, doğru ellerde marka değerini yükseltir.",
-        "VEXT Creative lisanslı pilot ve kamera ekibiyle çalışır.",
+        "VEXT Medya lisanslı pilot ve kamera ekibiyle çalışır.",
         "Projenize hava perspektifi ekleyelim.",
       ]),
     ],
@@ -426,7 +426,7 @@ const articles = {
       ]),
       sec("sonuc-ic", "Sonuç", [
         "İç mekan hikâyesi, marka güveninin güçlü kanalıdır.",
-        "VEXT Creative lokasyon prodüksiyonunu uçtan uca yönetir.",
+        "VEXT Medya lokasyon prodüksiyonunu uçtan uca yönetir.",
         "Mekânınızı sinematik dilde anlatalım.",
       ]),
     ],
@@ -442,7 +442,7 @@ const articles = {
     intro: [
       "Sinematik video çekimi, izleyiciyi sahneye davet eden görsel anlatımdır. Marka filmlerinden ürün tanıtımlarına aynı prensipler geçerlidir.",
       "Işık, kompozisyon, hareket ve ses birlikte çalışmalıdır. Profesyonel video prodüksiyon bu dörtlüyü planlar.",
-      "VEXT Creative olarak iç ve dış mekan projelerinde sinematik dili sürdürülebilir kılıyoruz.",
+      "VEXT Medya olarak iç ve dış mekan projelerinde sinematik dili sürdürülebilir kılıyoruz.",
     ],
     sections: [
       sec("plan", "Çekim Öncesi Planlama", [
@@ -472,7 +472,7 @@ const articles = {
       ]),
       sec("sonuc-sin", "Sonuç", [
         "Sinematik dil, markanızı hatırlanır kılar.",
-        "VEXT Creative ekibiyle projenizi birlikte planlayın.",
+        "VEXT Medya ekibiyle projenizi birlikte planlayın.",
         "Profesyonel video yolculuğunuza bugün başlayın.",
       ]),
     ],

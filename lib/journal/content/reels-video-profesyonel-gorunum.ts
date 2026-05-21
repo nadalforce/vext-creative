@@ -11,7 +11,7 @@ import {
 export const content: ContentBlock[] = joinContent(
   [
     paragraph(
-      "Reels dünyasında izleyici, parmak ucunda kaydırmaya hazır bekler; bu yüzden profesyonel video prodüksiyon bakışını dikeye taşımak sadece estetik değil, dönüşüm meselesidir. İlk üç saniye, markanızın o anki kararını belirleyen sahne olarak düşünülmeli ve metin‑görsel çelişkisine izin verilmemelidir. VEXT Creative yaklaşımında sosyal medya yönetimi, yayın takviminden önce sahne tasarımı ve ses mimarisi ile başlar çünkü akış içinde doğallık tesadüf değil, planlı bir ritimdir.",
+      "Reels dünyasında izleyici, parmak ucunda kaydırmaya hazır bekler; bu yüzden profesyonel video prodüksiyon bakışını dikeye taşımak sadece estetik değil, dönüşüm meselesidir. İlk üç saniye, markanızın o anki kararını belirleyen sahne olarak düşünülmeli ve metin‑görsel çelişkisine izin verilmemelidir. VEXT Medya yaklaşımında sosyal medya yönetimi, yayın takviminden önce sahne tasarımı ve ses mimarisi ile başlar çünkü akış içinde doğallık tesadüf değil, planlı bir ritimdir.",
     ),
     paragraph(
       "Dikey kadraj küçültülmüş bir sinema sahnesidir; yüz güvenlik alanı, ürün vurgusu ve marka kimliği renklerinin tonlamasıyla birlikte değerlendirildiğinde sonuç “ucuz acele” hissini reddeder. Reels videoda amaç görülebilecek kadar yakın gelmek, anlamayı kolaylaştırmaktır fakat yakınlık yüz anatomisini sıkıştırırsa premium algıyı düşürür. Bu yüzden lens seçimi, ışık yumuşaması ve hareket miktarı aynı cümleyi tek bir nefeste bitirir.",
@@ -86,7 +86,7 @@ export const content: ContentBlock[] = joinContent(
     "Ölçüm, Dönüşüm ve Profesyonel Üretim Kararı",
     [
       "Reels performansını yalnızca izlenme sayısıyla okumak, sinematik çekim emeğinin yarısını görmezden gelmek demektir. Kaydetme, paylaşım ve profil ziyareti gibi sinyaller, içeriğin güven üretip üretmediğini daha net anlatır. Profesyonel video üretimine geçiş çoğu marka için tek seferlik bir masraf değil; tekrarlanabilir bir görsel dil yatırımıdır.",
-      "İçerik üretimi sürecinde A/B test mantığıyla farklı açılış sahneleri denemek, veriyi yaratıcılığa karşı kullanmak değil yaratıcılığı güçlendirmektir. VEXT Creative ile çalışan markalar, çekim öncesi net brief ve çekim sonrası platforma özel export setleri sayesinde hem Instagram hem reklam panelinde tutarlı kalite görür.",
+      "İçerik üretimi sürecinde A/B test mantığıyla farklı açılış sahneleri denemek, veriyi yaratıcılığa karşı kullanmak değil yaratıcılığı güçlendirmektir. VEXT Medya ile çalışan markalar, çekim öncesi net brief ve çekim sonrası platforma özel export setleri sayesinde hem Instagram hem reklam panelinde tutarlı kalite görür.",
       "Sonuç olarak reels, kısa süreli bir format olsa da markanızın uzun soluklu dijital hikâyesinin giriş kapısıdır. Doğru ışık, doğru ses ve bilinçli video kurgu bir araya geldiğinde izleyici sadece izlemez; markayı hatırlar ve bir sonraki adımda sizinle iletişime geçmeyi düşünür.",
     ],
   ),
@@ -114,7 +114,7 @@ export const faq: JournalFAQ[] = defineFaq([
       "Sahnedeki yüzün ve nesnenin görsel olarak söylediği şeyleri tekrar eden bloklar gereksizdir. Metin, merak oluşturmak ya da aksiyona yön vermek için konumlanır.",
   },
   {
-    question: "VEXT Creative bu süreci nasıl yönlendirir?",
+    question: "VEXT Medya bu süreci nasıl yönlendirir?",
     answer:
       "Konsept storyboardundan ses ve montaj kalibrasyonuna kadar üretimin her adımında aynı estetik dili sürdürür; sosyal medya yönetimi ve profesyonel video prodüksiyon ekipleri paralel düşünür.",
   },

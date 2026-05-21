@@ -55,7 +55,7 @@ export function About() {
           </p>
           <h2 className="font-display text-[clamp(2rem,5.5vw,4.25rem)] font-bold leading-[1.08] tracking-[-0.03em] text-white">
             Biz{" "}
-            <span className="text-gradient-brand">VEXT Creative</span> Ekibi
+            <span className="text-gradient-brand">VEXT Medya</span> Ekibi
             Olarak
           </h2>
         </motion.header>

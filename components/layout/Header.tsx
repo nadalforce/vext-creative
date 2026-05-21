@@ -95,7 +95,7 @@ export function Header() {
               />
               <Image
                 src="/logo/vext-creative-transparent.png"
-                alt="VEXT Creative"
+                alt={BRAND.name}
                 width={170}
                 height={42}
                 priority

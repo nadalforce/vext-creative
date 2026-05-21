@@ -13,7 +13,9 @@ export default function JournalLayout({
   return (
     <>
       <Header />
-      <main className="relative min-h-screen bg-black">{children}</main>
+      <main id="main-content" className="relative min-h-screen bg-black">
+        {children}
+      </main>
       <Footer />
     </>
   );

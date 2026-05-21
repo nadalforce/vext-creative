@@ -3,7 +3,7 @@ import type { JournalFAQ } from "@/lib/journal/types";
 import { joinContent, section, bulletList, paragraph, faq as defineFaq } from "./_shared";
 
 export const content: ContentBlock[] = joinContent(
-  [{ type: "p" as const, text: "Video kurgu, çekimden sonra hikâyenin gerçekten anlatıldığı masadır. Ham görüntü güçlü olsa bile zayıf montaj, markanızı amatör gösterir ve izleyici güvenini düşürür." }, { type: "p" as const, text: "Post prodüksiyon sürecinde ritim, ses ve renk aynı anda düşünülmelidir. VEXT Creative ekibi, profesyonel video prodüksiyon çıktısını platforma göre optimize ederek teslim eder." }, { type: "p" as const, text: "Bu rehberde en sık yapılan kurgu hatalarını ve sinematik çekim kalitesini koruyan çözümleri sade Türkçe ile paylaşıyoruz." }],
+  [{ type: "p" as const, text: "Video kurgu, çekimden sonra hikâyenin gerçekten anlatıldığı masadır. Ham görüntü güçlü olsa bile zayıf montaj, markanızı amatör gösterir ve izleyici güvenini düşürür." }, { type: "p" as const, text: "Post prodüksiyon sürecinde ritim, ses ve renk aynı anda düşünülmelidir. VEXT Medya ekibi, profesyonel video prodüksiyon çıktısını platforma göre optimize ederek teslim eder." }, { type: "p" as const, text: "Bu rehberde en sık yapılan kurgu hatalarını ve sinematik çekim kalitesini koruyan çözümleri sade Türkçe ile paylaşıyoruz." }],
   section("ritim-sure", "Ritim ve Süre Dengesi", [
       "Her sahnenin aynı uzunlukta kalması izleyicide yorgunluk yaratır. Mesaj yoğun sahneler kısa, duygusal sahneler nefes alacak kadar uzun olmalıdır.",
       "Sosyal medya yönetimi için üretilen kısa videolarda bile ritim, kaydırma oranını doğrudan etkiler. Profesyonel video kurgu, platform ritmine saygı duyar.",
@@ -30,7 +30,7 @@ export const content: ContentBlock[] = joinContent(
     ]),
   section("sonuc", "Profesyonel Post Prodüksiyon Kararı", [
       "Kurgu masası, markanızın son imza noktasıdır. Deneyimli ekip, hataları çekim sonrası bile düzeltebilir.",
-      "VEXT Creative, video kurgu sürecini marka hedeflerinize göre yönetir ve teslim setlerini netleştirir.",
+      "VEXT Medya, video kurgu sürecini marka hedeflerinize göre yönetir ve teslim setlerini netleştirir.",
       "Projenizi birlikte planlayarak sinematik çekim yatırımınızın karşılığını alın.",
     ])
 );
@@ -49,7 +49,7 @@ export const faq: JournalFAQ[] = defineFaq([
     "answer": "Görüntü öncelikli düşünülür; oysa kötü ses güveni düşürür."
   },
   {
-    "question": "VEXT Creative ile çalışmak ne katar?",
+    "question": "VEXT Medya ile çalışmak ne katar?",
     "answer": "Konseptten teslimata aynı görsel dil, profesyonel ekip ve ölçülebilir süreç. Video prodüksiyon, sosyal medya yönetimi ve marka kimliği paralel yürütülür."
   }
 ]);

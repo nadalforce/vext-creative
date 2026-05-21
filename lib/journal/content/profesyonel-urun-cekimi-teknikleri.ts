@@ -26,7 +26,7 @@ export const content: ContentBlock[] = joinContent(
     ]),
   section("sonuc-urun", "Sonuç", [
       "Ürün görseli satış ekibinizin sessiz temsilcisidir.",
-      "VEXT Creative stüdyo ve lokasyon çekimlerini yönetir.",
+      "VEXT Medya stüdyo ve lokasyon çekimlerini yönetir.",
       "Katalog ve kampanya görsellerinizi birlikte üretelim.",
     ])
 );
@@ -37,7 +37,7 @@ export const faq: JournalFAQ[] = defineFaq([
     "answer": "Pazaryeri için çoğu zaman evet; marka hikâyesi için lifestyle da değerlidir."
   },
   {
-    "question": "VEXT Creative ile çalışmak ne katar?",
+    "question": "VEXT Medya ile çalışmak ne katar?",
     "answer": "Konseptten teslimata aynı görsel dil, profesyonel ekip ve ölçülebilir süreç. Video prodüksiyon, sosyal medya yönetimi ve marka kimliği paralel yürütülür."
   }
 ]);

@@ -26,7 +26,7 @@ export const content: ContentBlock[] = joinContent(
     ]),
   section("sonuc-ic", "Sonuç", [
       "İç mekan hikâyesi, marka güveninin güçlü kanalıdır.",
-      "VEXT Creative lokasyon prodüksiyonunu uçtan uca yönetir.",
+      "VEXT Medya lokasyon prodüksiyonunu uçtan uca yönetir.",
       "Mekânınızı sinematik dilde anlatalım.",
     ])
 );
@@ -37,7 +37,7 @@ export const faq: JournalFAQ[] = defineFaq([
     "answer": "Kapsama göre yarım günden çok günlük prodüksiyona uzanabilir."
   },
   {
-    "question": "VEXT Creative ile çalışmak ne katar?",
+    "question": "VEXT Medya ile çalışmak ne katar?",
     "answer": "Konseptten teslimata aynı görsel dil, profesyonel ekip ve ölçülebilir süreç. Video prodüksiyon, sosyal medya yönetimi ve marka kimliği paralel yürütülür."
   }
 ]);

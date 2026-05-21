@@ -3,7 +3,7 @@ import type { JournalFAQ } from "@/lib/journal/types";
 import { joinContent, section, bulletList, paragraph, faq as defineFaq } from "./_shared";
 
 export const content: ContentBlock[] = joinContent(
-  [{ type: "p" as const, text: "Sinematik video çekimi, izleyiciyi sahneye davet eden görsel anlatımdır. Marka filmlerinden ürün tanıtımlarına aynı prensipler geçerlidir." }, { type: "p" as const, text: "Işık, kompozisyon, hareket ve ses birlikte çalışmalıdır. Profesyonel video prodüksiyon bu dörtlüyü planlar." }, { type: "p" as const, text: "VEXT Creative olarak iç ve dış mekan projelerinde sinematik dili sürdürülebilir kılıyoruz." }],
+  [{ type: "p" as const, text: "Sinematik video çekimi, izleyiciyi sahneye davet eden görsel anlatımdır. Marka filmlerinden ürün tanıtımlarına aynı prensipler geçerlidir." }, { type: "p" as const, text: "Işık, kompozisyon, hareket ve ses birlikte çalışmalıdır. Profesyonel video prodüksiyon bu dörtlüyü planlar." }, { type: "p" as const, text: "VEXT Medya olarak iç ve dış mekan projelerinde sinematik dili sürdürülebilir kılıyoruz." }],
   section("plan", "Çekim Öncesi Planlama", [
       "Shot list ve storyboard zamanı sahada korur. Mekân keşfi ışık yönünü önceden gösterir.",
       "Lens ve kamera hareketi sahneye göre seçilir. Gimbal, slider veya tripod bilinçli tercih edilir.",
@@ -31,7 +31,7 @@ export const content: ContentBlock[] = joinContent(
     ]),
   section("sonuc-sin", "Sonuç", [
       "Sinematik dil, markanızı hatırlanır kılar.",
-      "VEXT Creative ekibiyle projenizi birlikte planlayın.",
+      "VEXT Medya ekibiyle projenizi birlikte planlayın.",
       "Profesyonel video yolculuğunuza bugün başlayın.",
     ])
 );
@@ -46,7 +46,7 @@ export const faq: JournalFAQ[] = defineFaq([
     "answer": "Evet; kontrollü ışık ve kadraj ile mümkündür."
   },
   {
-    "question": "VEXT Creative ile çalışmak ne katar?",
+    "question": "VEXT Medya ile çalışmak ne katar?",
     "answer": "Konseptten teslimata aynı görsel dil, profesyonel ekip ve ölçülebilir süreç. Video prodüksiyon, sosyal medya yönetimi ve marka kimliği paralel yürütülür."
   }
 ]);

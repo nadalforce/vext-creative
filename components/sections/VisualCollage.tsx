@@ -174,7 +174,7 @@ export function VisualCollage({ images }: VisualCollageProps) {
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10">
         <SectionHeading
           label="Atölye Kareleri"
-          title="Vext Creative Ofisimizden Kareler"
+          title="VEXT Medya Ofisimizden Kareler"
           description="Ofis, set, kurgu masası ve tasarım ekranından seçilmiş kareler."
           align="center"
         />

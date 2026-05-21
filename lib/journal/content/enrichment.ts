@@ -12,7 +12,7 @@ const EXTRA: Record<string, ContentBlock[]> = {
     section("reels-marka", "Marka Dili ve Reels Uyumu", [
       "Marka kimliği renkleri grade aşamasında korunmalıdır. Grafik tasarım ekibinin font ve alt yazı kuralları videoya taşınır.",
       "Profesyonel video prodüksiyon ile üretilen yatay master’dan dikey kesit almak, görsel kaliteyi yükseltir.",
-      "VEXT Creative, reels video setlerini ana kampanya çekimiyle aynı günde planlayarak tutarlılık sağlar.",
+      "VEXT Medya, reels video setlerini ana kampanya çekimiyle aynı günde planlayarak tutarlılık sağlar.",
     ]),
     section("reels-analiz", "Performans Okuma ve İyileştirme", [
       "İzlenme süresi grafiğindeki düşüş noktası, zayıf hook veya fazla metin göstergesidir. Kaydetme oranı güçlü sahnenin tekrar edilebilir olduğunu söyler.",
@@ -36,11 +36,11 @@ function defaultExtra(topic: string): ContentBlock[] {
       "Sosyal medya yönetimi, yayın saatini değil içerik kalitesini önceleyen markalarla uzun vadeli büyür. Algoritma değişse bile güçlü görüntü kalıcıdır.",
       "Web tasarımına giden trafik, video ile ısıtıldığında dönüşüm oranı artar. Tanıtım filminizin ilk on saniyesi landing sayfasıyla uyumlu olmalıdır.",
     ]),
-    section("vext-surec", "VEXT Creative Süreci", [
+    section("vext-surec", "VEXT Medya Süreci", [
       "Brief toplantısında hedef kitle, kanal ve başarı metriği netleşir. Çekim günü shot list ve ses planı ekiple paylaşılır. Post prodüksiyonda renk ve ses onayı aşamalı yapılır.",
       "Reels video, web hero ve tanıtım filmi aynı prodüksiyon dilinden türetilebilir. Bu yaklaşım maliyeti optimize ederken kaliteyi yükseltir.",
       "İşletme sahipleri teknik detayları bilmeden sürece dahil olabilir; önemli olan onay noktalarında net geri bildirimdir.",
-      "VEXT Creative, İstanbul merkezli ekibiyle iç ve dış mekan prodüksiyon, post prodüksiyon ve dijital içerik üretimini tek çatı altında sunar.",
+      "VEXT Medya, İstanbul merkezli ekibiyle iç ve dış mekan prodüksiyon, post prodüksiyon ve dijital içerik üretimini tek çatı altında sunar.",
     ]),
     section("olcum", "Ölçüm ve Sürekli İyileştirme", [
       "Yayın sonrası kaydetme, tamamlama ve profil ziyareti metrikleri içerik stratejisini besler. Tek bir videonun performansı tüm kanalı yönlendirmemeli; desen aranmalıdır.",
@@ -51,7 +51,7 @@ function defaultExtra(topic: string): ContentBlock[] {
       "Okuduğunuz başlıkları kendi markanıza uyarlayın ve mevcut içeriklerinizi bu kontrol listesiyle gözden geçirin.",
       "Eksik kalan alanlar için profesyonel destek almak zaman kazandırır ve görsel güveni hızla yükseltir.",
       "Projenizi birlikte planlayalım: iletişim bölümünden hedeflerinizi paylaşın, size özel prodüksiyon takvimi oluşturalım.",
-      "VEXT Creative ekibi, sinematik çekim ve dijital içerik üretiminde yanınızda.",
+      "VEXT Medya ekibi, sinematik çekim ve dijital içerik üretiminde yanınızda.",
     ]),
   );
 }
@@ -85,7 +85,7 @@ function universalAppend(): ContentBlock[] {
     ]),
     section("iletisim-cta", "Projenizi Birlikte Planlayalım", [
       "Bu rehberdeki maddeleri kendi ekibinizle paylaşın ve mevcut içeriklerinizi puanlayın. Zayıf alanlar çoğu zaman tek bir prodüksiyon günüyle güçlendirilebilir.",
-      "VEXT Creative, video prodüksiyon, sosyal medya yönetimi, grafik tasarım ve web tasarımını tek stratejide birleştirir.",
+      "VEXT Medya, video prodüksiyon, sosyal medya yönetimi, grafik tasarım ve web tasarımını tek stratejide birleştirir.",
       "Projenizi birlikte planlayalım: hedefinizi, bütçe aralığınızı ve teslim tarihinizi iletişim bölümünden iletin.",
       "Sinematik çekim, profesyonel video ve sürdürülebilir içerik üretimi için doğru adrestesiniz.",
     ]),

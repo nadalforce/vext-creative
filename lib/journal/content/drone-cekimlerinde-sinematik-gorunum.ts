@@ -26,7 +26,7 @@ export const content: ContentBlock[] = joinContent(
     ]),
   section("sonuc-drone", "Sonuç", [
       "Hava çekimi, doğru ellerde marka değerini yükseltir.",
-      "VEXT Creative lisanslı pilot ve kamera ekibiyle çalışır.",
+      "VEXT Medya lisanslı pilot ve kamera ekibiyle çalışır.",
       "Projenize hava perspektifi ekleyelim.",
     ])
 );
@@ -37,7 +37,7 @@ export const faq: JournalFAQ[] = defineFaq([
     "answer": "Evet; exposure ve ND ile profesyonel sonuç alınır."
   },
   {
-    "question": "VEXT Creative ile çalışmak ne katar?",
+    "question": "VEXT Medya ile çalışmak ne katar?",
     "answer": "Konseptten teslimata aynı görsel dil, profesyonel ekip ve ölçülebilir süreç. Video prodüksiyon, sosyal medya yönetimi ve marka kimliği paralel yürütülür."
   }
 ]);

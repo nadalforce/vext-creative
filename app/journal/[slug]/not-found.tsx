@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { JOURNAL_BASE } from "@/lib/journal/site";
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = buildPageMetadata({
+  path: `${JOURNAL_BASE}/bulunamadi`,
+  title: "Makale bulunamadı | VEXT Journal",
+  description: "Aradığınız journal yazısı bulunamadı. VEXT Medya journal sayfasına dönün.",
+  noIndex: true,
+});
 
 export default function JournalArticleNotFound() {
   return (

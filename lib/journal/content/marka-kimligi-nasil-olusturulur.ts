@@ -3,7 +3,7 @@ import type { JournalFAQ } from "@/lib/journal/types";
 import { joinContent, section, bulletList, paragraph, faq as defineFaq } from "./_shared";
 
 export const content: ContentBlock[] = joinContent(
-  [{ type: "p" as const, text: "Marka kimliği, müşterinin sizi hatırlama biçimidir. Logo tek başına kimlik değildir; renk, tipografi, ses tonu ve görsel tutarlılık birlikte güven inşa eder." }, { type: "p" as const, text: "Küçük işletmeler de kurumsal firmalar kadar tutarlı görünmek zorundadır çünkü dijital ortamda ilk izlenim saniyeler içinde oluşur." }, { type: "p" as const, text: "VEXT Creative olarak marka kimliği sürecini araştırma, konumlandırma ve uygulama üçlüsüyle yürütüyoruz. Bu rehber, adım adım net bir yol haritası sunar." }],
+  [{ type: "p" as const, text: "Marka kimliği, müşterinin sizi hatırlama biçimidir. Logo tek başına kimlik değildir; renk, tipografi, ses tonu ve görsel tutarlılık birlikte güven inşa eder." }, { type: "p" as const, text: "Küçük işletmeler de kurumsal firmalar kadar tutarlı görünmek zorundadır çünkü dijital ortamda ilk izlenim saniyeler içinde oluşur." }, { type: "p" as const, text: "VEXT Medya olarak marka kimliği sürecini araştırma, konumlandırma ve uygulama üçlüsüyle yürütüyoruz. Bu rehber, adım adım net bir yol haritası sunar." }],
   section("arastirma", "Araştırma ve Konumlandırma", [
       "Hedef kitle net değilse tasarım kararları rastgele kalır. Rakip analizi fark yaratacak boşlukları gösterir.",
       "Marka vaadi tek cümlede ifade edilebilmelidir. Bu cümle logo, web tasarımı ve video prodüksiyon dilini besler.",
@@ -26,7 +26,7 @@ export const content: ContentBlock[] = joinContent(
     ]),
   section("sonuc-marka", "Sonuç: Güçlü Kimlik Yatırımı", [
       "Marka kimliği tek seferlik değil, yaşayan bir sistemdir.",
-      "VEXT Creative markanızı sinematik çekim ve dijital kanallarda aynı dilde taşır.",
+      "VEXT Medya markanızı sinematik çekim ve dijital kanallarda aynı dilde taşır.",
       "Projenizi birlikte planlayarak görsel güveninizi kalıcı hale getirin.",
     ])
 );
@@ -41,7 +41,7 @@ export const faq: JournalFAQ[] = defineFaq([
     "answer": "Kapsama göre 2–8 hafta. Araştırma ve onay aşamaları belirleyicidir."
   },
   {
-    "question": "VEXT Creative ile çalışmak ne katar?",
+    "question": "VEXT Medya ile çalışmak ne katar?",
     "answer": "Konseptten teslimata aynı görsel dil, profesyonel ekip ve ölçülebilir süreç. Video prodüksiyon, sosyal medya yönetimi ve marka kimliği paralel yürütülür."
   }
 ]);
