@@ -9,7 +9,7 @@ const organizationSchema = {
   description: SITE_DESCRIPTION,
   logo: {
     "@type": "ImageObject",
-    url: `${SITE_URL}/android-chrome-512x512.png`,
+    url: `${SITE_URL}/icon-512.png`,
     width: 512,
     height: 512,
   },
