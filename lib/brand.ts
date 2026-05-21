@@ -1,7 +1,8 @@
 /** Official VEXT Medya brand assets — use only these paths */
 export const BRAND = {
-  /** Navbar / icon mark */
+  /** Navbar / icon mark — also used as favicon (unmodified source file) */
   symbol: "/logo/vext-symbol.png",
+  favicon: "/logo/vext-symbol.png",
   /** Full wordmark PNG */
   logo: "/logo/vext-logo.png",
   /** Full wordmark SVG */

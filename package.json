@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "favicons": "node scripts/generate-favicons.mjs"
+    "lint": "eslint"
   },
   "dependencies": {
     "framer-motion": "^12.38.0",
@@ -24,7 +23,6 @@
     "eslint-config-next": "16.2.6",
     "sharp": "^0.34.5",
     "tailwindcss": "^4",
-    "to-ico": "^1.1.5",
     "typescript": "^5"
   }
 }

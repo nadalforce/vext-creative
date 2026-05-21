@@ -9,7 +9,7 @@ const organizationSchema = {
   description: SITE_DESCRIPTION,
   logo: {
     "@type": "ImageObject",
-    url: `${SITE_URL}/icon-512.png`,
+    url: `${SITE_URL}${BRAND.favicon}`,
     width: 512,
     height: 512,
   },
