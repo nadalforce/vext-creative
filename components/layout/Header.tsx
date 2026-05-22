@@ -11,10 +11,10 @@ import { isRouteLink, resolveNavHref } from "@/lib/nav";
 
 /** Mobile-first; md: = desktop (unchanged) */
 const navLinkClass =
-  "group relative shrink-0 whitespace-nowrap text-[7px] font-medium uppercase tracking-[0.06em] text-white/55 transition-colors duration-300 hover:text-white min-[380px]:text-[7.5px] min-[420px]:text-[8px] md:text-[13px] md:tracking-[0.12em]";
+  "group relative shrink-0 whitespace-nowrap text-[7.5px] font-medium uppercase tracking-[0.05em] text-white/55 transition-colors duration-300 hover:text-white min-[360px]:text-[8px] min-[420px]:text-[8.5px] md:text-[13px] md:tracking-[0.12em]";
 
 const ctaClass =
-  "relative z-10 ml-auto inline-flex shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/[0.06] px-2.5 py-1.5 text-[7px] font-semibold uppercase tracking-[0.05em] text-white backdrop-blur-md transition-all duration-300 hover:border-white/35 hover:bg-white/10 hover:shadow-[0_0_40px_rgba(255,255,255,0.08)] min-[400px]:px-3 min-[400px]:text-[8px] md:px-7 md:py-2.5 md:text-[13px] md:tracking-[0.1em]";
+  "relative z-10 hidden shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/[0.06] px-7 py-2.5 text-[13px] font-semibold uppercase tracking-[0.1em] text-white backdrop-blur-md transition-all duration-300 hover:border-white/35 hover:bg-white/10 hover:shadow-[0_0_40px_rgba(255,255,255,0.08)] md:ml-auto md:inline-flex";
 
 function NavItem({
   href,
@@ -69,11 +69,11 @@ export function Header() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
     >
-      <div className="relative mx-auto flex max-w-7xl items-center justify-between gap-2 overflow-hidden px-3 py-2 min-[360px]:gap-2.5 min-[360px]:px-3.5 md:gap-0 md:justify-normal md:px-10 md:py-5 lg:px-12 xl:px-14">
+      <div className="relative mx-auto grid max-w-7xl grid-cols-[2.5rem_1fr_2.5rem] items-center overflow-hidden px-2.5 py-2.5 min-[360px]:px-3 md:flex md:px-10 md:py-5 lg:px-12 xl:px-14">
         <Link
           href={homeHref}
           aria-label={BRAND.name}
-          className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500/50 md:h-[58px] md:w-[58px]"
+          className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500/50 md:h-[58px] md:w-[58px]"
         >
           <Image
             src={BRAND.symbol}
@@ -91,7 +91,7 @@ export function Header() {
           className="relative z-[1] flex min-w-0 flex-1 items-center justify-center overflow-hidden px-0.5 md:pointer-events-none md:absolute md:inset-0 md:z-auto md:flex-none md:overflow-visible md:px-0"
           aria-label="Ana navigasyon"
         >
-          <div className="pointer-events-auto flex min-w-0 max-w-full items-center justify-center gap-1 min-[360px]:gap-1.5 min-[400px]:gap-2 md:max-w-none md:gap-8 lg:gap-10 xl:gap-12">
+          <div className="pointer-events-auto mx-auto flex min-w-0 max-w-full items-center justify-center gap-1.5 min-[360px]:gap-2 min-[400px]:gap-2.5 md:max-w-none md:gap-8 lg:gap-10 xl:gap-12">
             {NAV_LINKS.map((link) => (
               <NavItem
                 key={link.href}
@@ -102,6 +102,9 @@ export function Header() {
             ))}
           </div>
         </nav>
+
+        {/* Mobilde logo ile simetrik boşluk — menü görsel olarak ortada */}
+        <div className="h-10 w-10 shrink-0 md:hidden" aria-hidden />
 
         <a href={contactHref} className={ctaClass}>
           Proje Başlat
