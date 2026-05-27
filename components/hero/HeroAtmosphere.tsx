@@ -22,14 +22,14 @@ export function HeroAtmosphere({ sectionRef }: HeroAtmosphereProps) {
       aria-hidden
     >
       {/* Base atmosphere — lighter so logo + content read clearly */}
-      <motion.div className="absolute inset-0 bg-[radial-gradient(ellipse_120%_80%_at_50%_20%,rgba(12,8,16,0.55)_0%,rgba(4,2,8,0.75)_50%,rgba(0,0,0,0.92)_100%)]" />
-      <motion.div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_80%_55%,rgba(25,18,32,0.12)_0%,transparent_60%)]" />
+      <motion.div className="absolute inset-0 bg-[radial-gradient(ellipse_120%_80%_at_50%_20%,rgba(16,4,4,0.55)_0%,rgba(6,2,2,0.75)_50%,rgba(0,0,0,0.92)_100%)]" />
+      <motion.div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_80%_55%,rgba(160,10,10,0.08)_0%,transparent_60%)]" />
 
       <motion.div
         className="absolute left-1/2 top-[38%] h-[min(90vw,800px)] w-[min(90vw,800px)] -translate-x-1/2 -translate-y-1/2"
         style={{ y: ySlow }}
       >
-        <div className="h-full w-full rounded-full bg-[#1a1520]/40 blur-[140px]" />
+        <div className="h-full w-full rounded-full bg-[#1a0c0c]/40 blur-[140px]" />
       </motion.div>
 
       {/* Edge vignette only — center stays clear for logo + headline */}

@@ -61,7 +61,7 @@ export function AtmosphericMark({
       aria-hidden
     >
       <div
-        className="absolute rounded-full bg-[#1a1520]/35 blur-[120px]"
+        className="absolute rounded-full bg-[#1a0c0c]/35 blur-[120px]"
         style={{ width: size * 0.65, height: size * 0.65 }}
       />
       <motion.div

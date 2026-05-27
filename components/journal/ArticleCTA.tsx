@@ -7,7 +7,7 @@ export function ArticleCTA() {
       aria-labelledby="article-cta-heading"
     >
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(35,28,42,0.2)_0%,transparent_70%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(120,0,0,0.1)_0%,transparent_70%)]"
         aria-hidden
       />
       <h2

@@ -13,10 +13,10 @@ export const BRAND = {
 } as const;
 
 export const BRAND_COLORS = {
-  violet: "#4a3f56",
-  electric: "#8f8498",
-  deep: "#0a090c",
-  glowViolet: "rgba(45, 38, 55, 0.35)",
+  accent: "#5a3838",
+  electric: "#9a7878",
+  deep: "#0a0606",
+  glowAmbient: "rgba(120, 0, 0, 0.1)",
   glowSoft: "rgba(255, 255, 255, 0.06)",
 } as const;
 

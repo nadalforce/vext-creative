@@ -23,7 +23,7 @@ export function About() {
       <GlowOrb className="right-0 bottom-1/4" color="soft" delay={2} />
 
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_50%_at_50%_0%,rgba(25,18,32,0.15)_0%,transparent_55%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_50%_at_50%_0%,rgba(160,10,10,0.08)_0%,transparent_55%)]"
         aria-hidden
       />
       <div

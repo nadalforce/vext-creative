@@ -2,7 +2,7 @@ export function JournalAtmosphere() {
   return (
     <>
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_100%_70%_at_50%_-10%,rgba(25,18,32,0.18)_0%,transparent_55%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_100%_70%_at_50%_-10%,rgba(160,10,10,0.08)_0%,transparent_55%)]"
         aria-hidden
       />
       <div

@@ -49,12 +49,12 @@ export function CinematicVisual({
   return (
     <motion.div
       ref={ref}
-      className={`cinematic-visual cinematic-visual--${visibility} relative isolate overflow-hidden bg-[#0a0612] ${className}`}
+      className={`cinematic-visual cinematic-visual--${visibility} relative isolate overflow-hidden bg-[#0a0404] ${className}`}
       style={style}
       aria-hidden={!alt}
     >
       {!showPhoto && (
-        <div className="absolute inset-0 bg-gradient-to-br from-violet-950/60 via-[#0a0414] to-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-violet-950/60 via-[#0a0406] to-black" />
       )}
 
       {showPhoto && (

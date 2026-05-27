@@ -42,7 +42,7 @@ export function CareersJoin() {
           transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
         >
           <div
-            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_70%_at_20%_0%,rgba(45,38,55,0.22)_0%,transparent_55%)]"
+            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_70%_at_20%_0%,rgba(120,0,0,0.1)_0%,transparent_55%)]"
             aria-hidden
           />
           <div

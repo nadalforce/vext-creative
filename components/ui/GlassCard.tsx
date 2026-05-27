@@ -31,7 +31,7 @@ export function GlassCard({
         className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
         style={{
           background:
-            "linear-gradient(135deg, rgba(255,255,255,0.12), transparent 40%, rgba(45,38,55,0.15))",
+            "linear-gradient(135deg, rgba(255,255,255,0.12), transparent 40%, rgba(120,0,0,0.08))",
           mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
           maskComposite: "exclude",
           WebkitMaskComposite: "xor",

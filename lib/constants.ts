@@ -1,11 +1,11 @@
 import type { MediaCategory } from "@/lib/media-server";
 
 export const CONTACT = {
-  phone: "+90 542 650 96 53",
-  phoneHref: "tel:+905426509653",
+  phone: "+90 552 104 26 94",
+  phoneHref: "tel:+905521042694",
   email: "info@vextmedya.com",
   emailHref: "mailto:info@vextmedya.com",
-  whatsapp: "https://wa.me/905426509653",
+  whatsapp: "https://wa.me/905521042694",
   instagram: "https://www.instagram.com/vextcreative",
   officeLabel: "OFİS",
   officeAddress: "İstanbul / Kartal / Yalı Mah.",
