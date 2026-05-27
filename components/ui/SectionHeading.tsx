@@ -23,6 +23,7 @@ export function SectionHeading({
       className={`mb-16 md:mb-24 max-w-3xl ${alignClass}`}
       variants={fadeUp}
       initial="hidden"
+      animate="visible"
       whileInView="visible"
       viewport={{ once: true, margin: "-80px" }}
     >

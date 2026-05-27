@@ -34,7 +34,7 @@ function CollagePhoto({
     <motion.div
       className={`relative overflow-hidden rounded-2xl bg-zinc-900 shadow-[0_24px_70px_rgba(0,0,0,0.55)] ring-1 ring-white/15 md:rounded-3xl ${className}`}
       style={{ rotate, ...style }}
-      initial={{ opacity: 0, y: 28 }}
+      initial={{ opacity: 1, y: 28 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-30px" }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
@@ -183,6 +183,7 @@ export function VisualCollage({ images }: VisualCollageProps) {
           className="relative mt-14 grid grid-cols-2 gap-3 sm:gap-4 md:hidden"
           variants={fadeUp}
           initial="hidden"
+          animate="visible"
           whileInView="visible"
           viewport={{ once: true }}
         >
@@ -199,7 +200,7 @@ export function VisualCollage({ images }: VisualCollageProps) {
         <motion.div
           className="relative mt-16 hidden md:block"
           style={{ y: yBg }}
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 1 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.9 }}

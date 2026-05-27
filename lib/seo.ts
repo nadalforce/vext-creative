@@ -19,14 +19,14 @@ export const SITE_URL = normalizeSiteUrl(
 
 export const SITE_NAME = "VEXT Medya";
 
-export const SITE_TITLE =
-  "VEXT Medya | Video Prodüksiyon & Web Tasarım Ajansı";
+export const SITE_TITLE = "VEXT Medya | Reklam Ajansı";
 
 export const SITE_DESCRIPTION =
-  "Video prodüksiyon, drone çekimleri, web tasarımı, grafik tasarım, sosyal medya ve dijital reklam yönetimiyle markanızı büyütüyoruz.";
+  "VEXT Medya reklam ajansı olarak video prodüksiyon, drone çekimi, web tasarım, grafik tasarım, sosyal medya ve dijital reklam yönetimiyle markanızı büyütür.";
 
 export const SITE_KEYWORDS = [
   "VEXT Medya",
+  "reklam ajansı",
   "medya ajansı",
   "video prodüksiyon",
   "web tasarım",
@@ -132,6 +132,8 @@ export const rootMetadata: Metadata = {
     icon: [
       { url: BRAND.favicon, type: "image/png", sizes: "any" },
       { url: BRAND.favicon, type: "image/png", sizes: "32x32" },
+      { url: BRAND.favicon, type: "image/png", sizes: "192x192" },
+      { url: BRAND.favicon, type: "image/png", sizes: "512x512" },
     ],
     shortcut: BRAND.favicon,
     apple: { url: BRAND.favicon, type: "image/png", sizes: "180x180" },

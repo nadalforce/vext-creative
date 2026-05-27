@@ -57,7 +57,7 @@ export function Contact() {
 
         <motion.ul
           className="mx-auto mt-14 flex w-full max-w-3xl flex-col gap-5 md:mt-16 md:max-w-4xl md:gap-7 lg:max-w-[52rem]"
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 1, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
@@ -67,7 +67,7 @@ export function Contact() {
             <motion.li
               key={src}
               className="w-full"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 1, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{
@@ -97,6 +97,7 @@ export function Contact() {
           <motion.div
             variants={fadeUp}
             initial="hidden"
+            animate="visible"
             whileInView="visible"
             viewport={{ once: true }}
           >
@@ -165,6 +166,7 @@ export function Contact() {
           <motion.div
             variants={staggerContainer}
             initial="hidden"
+            animate="visible"
             whileInView="visible"
             viewport={{ once: true }}
           >
@@ -172,7 +174,7 @@ export function Contact() {
               {submitted ? (
                 <motion.div
                   className="flex flex-col items-center justify-center py-16 text-center"
-                  initial={{ opacity: 0, scale: 0.95 }}
+                  initial={{ opacity: 1, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                 >
                   <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-violet-500/20">

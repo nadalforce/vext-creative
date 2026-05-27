@@ -50,7 +50,7 @@ export function ServiceShowcaseSection({
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10">
         <motion.div
           className="mb-10 flex flex-wrap items-end justify-between gap-6 md:mb-12"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
@@ -78,7 +78,7 @@ export function ServiceShowcaseSection({
         {hasVisuals ? (
           <motion.div
             className="mb-10 md:mb-12"
-            initial={{ opacity: 0, y: 32 }}
+            initial={{ opacity: 1, y: 32 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
@@ -89,7 +89,7 @@ export function ServiceShowcaseSection({
           sectionId === "hizmet-sosyal-medya" && (
             <motion.div
               className="mb-10 md:mb-12"
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 1, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
@@ -102,6 +102,7 @@ export function ServiceShowcaseSection({
           className={`max-w-2xl space-y-5 text-base leading-[1.75] text-white/55 md:space-y-6 md:text-lg md:leading-relaxed ${hasVisuals ? "" : "mt-2"}`}
           variants={fadeUp}
           initial="hidden"
+          animate="visible"
           whileInView="visible"
           viewport={{ once: true }}
         >
@@ -113,7 +114,7 @@ export function ServiceShowcaseSection({
         <motion.a
           href="#contact"
           className="mt-8 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-violet-400 md:hidden"
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 1 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >

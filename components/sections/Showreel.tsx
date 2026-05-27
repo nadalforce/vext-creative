@@ -37,6 +37,7 @@ export function Showreel({ backgroundImages = [] }: ShowreelProps) {
           className="relative mt-12"
           variants={fadeUp}
           initial="hidden"
+          animate="visible"
           whileInView="visible"
           viewport={{ once: true }}
         >
@@ -53,7 +54,7 @@ export function Showreel({ backgroundImages = [] }: ShowreelProps) {
                     type="button"
                     onClick={() => setPlaying(true)}
                     className="absolute left-1/2 top-1/2 z-20 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-black/50 backdrop-blur-md transition-transform hover:scale-105"
-                    initial={{ opacity: 0 }}
+                    initial={{ opacity: 1 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     aria-label="Oynat"

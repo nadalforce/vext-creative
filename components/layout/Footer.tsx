@@ -1,52 +1,45 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { BRAND } from "@/lib/brand";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { PremiumWordmarkLogo } from "@/components/brand/PremiumWordmarkLogo";
 import { NAV_LINKS, CONTACT } from "@/lib/constants";
-
-const FOOTER_SYMBOL = "/logo/vext-footer-logo.png";
-const FOOTER_WORDMARK = "/logo/vext-footer-wordmark.png";
+import { isRouteLink, resolveNavHref } from "@/lib/nav";
 
 export function Footer() {
+  const pathname = usePathname();
+  const homeHref = resolveNavHref("#hero", pathname);
+
   return (
     <footer className="relative border-t border-white/[0.06] bg-black">
       <motion.div className="relative mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
         <motion.div className="flex flex-col gap-12 md:flex-row md:items-start md:justify-between">
-          <motion.div>
-            <div className="flex items-center gap-3 md:gap-3.5">
-              <Image
-                src={FOOTER_SYMBOL}
-                alt=""
-                width={112}
-                height={112}
-                className="h-[5.75rem] w-auto shrink-0 object-contain md:h-[6.75rem]"
-                aria-hidden
-              />
-              <Image
-                src={FOOTER_WORDMARK}
-                alt={BRAND.name}
-                width={280}
-                height={56}
-                className="h-[3.75rem] w-auto max-w-[min(52vw,13.5rem)] object-contain md:h-[4.25rem] md:max-w-[15.5rem]"
-                sizes="(max-width: 768px) 200px, 248px"
-              />
-            </div>
+          <motion.div className="min-w-0 shrink-0">
+            <PremiumWordmarkLogo variant="footer" href={homeHref} />
           </motion.div>
 
           <nav
             className="grid grid-cols-2 gap-x-12 gap-y-3 sm:grid-cols-3"
             aria-label="Alt bilgi navigasyonu"
           >
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm text-white/40 transition-colors hover:text-white"
-              >
-                {link.label}
-              </a>
-            ))}
+            {NAV_LINKS.map((link) => {
+              const href = resolveNavHref(link.href, pathname);
+              const className =
+                "text-sm text-white/40 transition-colors hover:text-white";
+              if (isRouteLink(href)) {
+                return (
+                  <Link key={link.href} href={href} className={className}>
+                    {link.label}
+                  </Link>
+                );
+              }
+              return (
+                <a key={link.href} href={href} className={className}>
+                  {link.label}
+                </a>
+              );
+            })}
           </nav>
 
           <motion.div className="flex flex-col gap-4">

@@ -67,7 +67,7 @@ export function CinematicVisual({
             src={src}
             alt={alt}
             className={`cinematic-visual__photo absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ${
-              ready ? "opacity-100" : "opacity-0"
+              ready ? "opacity-100" : "opacity-90"
             }`}
             style={{ objectPosition }}
             onLoad={() => setReady(true)}

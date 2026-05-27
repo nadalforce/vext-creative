@@ -36,7 +36,7 @@ export function CareersJoin() {
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10">
         <motion.div
           className="relative overflow-hidden rounded-[1.75rem] border border-white/[0.08] bg-white/[0.02] px-8 py-14 ring-1 ring-white/[0.06] backdrop-blur-sm md:rounded-[2rem] md:px-14 md:py-20 lg:px-16 lg:py-24"
-          initial={{ opacity: 0, y: 32 }}
+          initial={{ opacity: 1, y: 32 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
@@ -68,6 +68,7 @@ export function CareersJoin() {
                   key={index}
                   variants={fadeUp}
                   initial="hidden"
+                  animate="visible"
                   whileInView="visible"
                   viewport={{ once: true }}
                 >
@@ -80,6 +81,7 @@ export function CareersJoin() {
               className="mt-10 flex flex-col gap-4 sm:mt-12 sm:flex-row sm:flex-wrap sm:items-center"
               variants={fadeUp}
               initial="hidden"
+              animate="visible"
               whileInView="visible"
               viewport={{ once: true }}
             >

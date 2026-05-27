@@ -26,7 +26,7 @@ export function FloatingSocial() {
   return (
     <motion.div
       className="fixed bottom-8 right-6 z-[45] flex flex-col gap-3 md:right-10"
-      initial={{ opacity: 0, x: 24 }}
+      initial={{ opacity: 1, x: 0 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 1.2, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
     >

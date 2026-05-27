@@ -41,7 +41,7 @@ export function VextWatermark({
     >
       <motion.div
         className="absolute inset-0"
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 1 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1.4 }}

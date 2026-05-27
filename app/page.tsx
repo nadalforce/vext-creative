@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main id="main-content">
+      <main id="main-content" className="relative z-10">
         <Hero />
         <Services />
         <ServiceShowcases />

@@ -14,7 +14,7 @@ export function FeaturedArticle({ article }: FeaturedArticleProps) {
   return (
     <motion.section
       className="relative overflow-hidden rounded-3xl border border-white/[0.1] bg-white/[0.02] ring-1 ring-white/10"
-      initial={{ opacity: 0, y: 32 }}
+      initial={{ opacity: 1, y: 32 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}

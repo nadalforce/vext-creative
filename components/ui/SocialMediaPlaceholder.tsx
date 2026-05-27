@@ -7,7 +7,7 @@ export function SocialMediaPlaceholder() {
   return (
     <motion.div
       className="relative flex min-h-[min(40vh,380px)] flex-col items-center justify-center overflow-hidden rounded-3xl border border-dashed border-violet-500/25 bg-gradient-to-br from-violet-950/30 via-black to-zinc-950 ring-1 ring-white/10"
-      initial={{ opacity: 0, y: 24 }}
+      initial={{ opacity: 1, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
     >

@@ -34,7 +34,7 @@ export function About() {
       <motion.div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10">
         <motion.header
           className="max-w-4xl"
-          initial={{ opacity: 0, y: 28 }}
+          initial={{ opacity: 1, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
@@ -52,7 +52,7 @@ export function About() {
 
         <motion.div
           className="mt-16 max-w-3xl lg:mt-20"
-          initial={{ opacity: 0, x: -24 }}
+          initial={{ opacity: 1, x: -24 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.85, delay: 0.1 }}
@@ -85,7 +85,7 @@ export function About() {
                 <motion.li
                   key={item.label}
                   className="group flex min-w-0 items-start gap-3.5 md:gap-4"
-                  initial={{ opacity: 0, x: -12 }}
+                  initial={{ opacity: 1, x: -12 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.05 * i, duration: 0.5 }}
@@ -104,7 +104,7 @@ export function About() {
 
         <motion.div
           className="mt-16 max-w-3xl border-t border-white/[0.06] pt-16 md:mt-20 md:pt-20 lg:mt-24"
-          initial={{ opacity: 0, y: 28 }}
+          initial={{ opacity: 1, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.85 }}
@@ -123,7 +123,7 @@ export function About() {
 
         <motion.blockquote
           className="relative mt-16 md:mt-20"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}

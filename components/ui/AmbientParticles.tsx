@@ -37,7 +37,7 @@ export function AmbientParticles() {
 
   return (
     <motion.div
-      className="pointer-events-none fixed inset-0 z-[35] overflow-hidden"
+      className="pointer-events-none fixed inset-0 z-[8] overflow-hidden"
       aria-hidden
     >
       {particles.map((p) => (
