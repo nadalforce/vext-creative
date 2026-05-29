@@ -11,7 +11,7 @@ export function TableOfContents({ article }: TableOfContentsProps) {
 
   return (
     <aside
-      className="rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 ring-1 ring-white/10 lg:sticky lg:top-28"
+      className="rounded-2xl border border-foreground/[0.08] bg-foreground/[0.02] p-6 ring-1 ring-foreground/10 lg:sticky lg:top-28"
       aria-labelledby="toc-heading"
     >
       <h2
@@ -25,7 +25,7 @@ export function TableOfContents({ article }: TableOfContentsProps) {
           <li key={h.id} className={h.type === "h3" ? "ml-4" : undefined}>
             <a
               href={`#${h.id}`}
-              className="text-white/55 transition-colors hover:text-violet-300"
+              className="text-foreground/55 transition-colors hover:text-violet-300"
             >
               {h.text}
             </a>

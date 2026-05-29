@@ -22,20 +22,20 @@ export function CareersJoin() {
   return (
     <section
       id="ekip"
-      className="relative overflow-hidden border-t border-white/[0.06] bg-black py-24 md:py-32 lg:py-40"
+      className="relative overflow-hidden border-t border-foreground/[0.06] bg-transparent py-24 md:py-32 lg:py-40"
       aria-labelledby="careers-heading"
     >
       <GlowOrb className="left-1/4 top-0 opacity-50" color="violet" delay={0.2} />
       <GlowOrb className="right-0 bottom-0 opacity-35" color="ambient" delay={1.2} />
 
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-foreground/10 to-transparent"
         aria-hidden
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10">
         <motion.div
-          className="relative overflow-hidden rounded-[1.75rem] border border-white/[0.08] bg-white/[0.02] px-8 py-14 ring-1 ring-white/[0.06] backdrop-blur-sm md:rounded-[2rem] md:px-14 md:py-20 lg:px-16 lg:py-24"
+          className="relative overflow-hidden rounded-[1.75rem] border border-foreground/[0.08] bg-foreground/[0.02] px-8 py-14 ring-1 ring-foreground/[0.06] backdrop-blur-sm md:rounded-[2rem] md:px-14 md:py-20 lg:px-16 lg:py-24"
           initial={{ opacity: 1, y: 32 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
@@ -57,12 +57,13 @@ export function CareersJoin() {
 
             <h2
               id="careers-heading"
-              className="font-display mt-5 text-[clamp(1.75rem,4.5vw,3.25rem)] font-bold leading-[1.1] tracking-[-0.02em] text-white"
+              className="font-display mt-5 text-[clamp(1.75rem,4.5vw,3.25rem)] font-extrabold leading-[1.1] text-foreground"
             >
-              Ekibimize Katılmak İster Misiniz?
+              Ekibimize{" "}
+              <span className="text-accent">Katılmak</span> İster Misiniz?
             </h2>
 
-            <div className="mt-8 space-y-5 text-base leading-[1.75] text-white/55 md:mt-10 md:space-y-6 md:text-lg md:leading-relaxed">
+            <div className="text-body mt-8 space-y-5 text-base md:mt-10 md:space-y-6 md:text-lg">
               {PARAGRAPHS.map((paragraph, index) => (
                 <motion.p
                   key={index}
@@ -95,7 +96,7 @@ export function CareersJoin() {
                 href={CONTACT.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex w-full items-center justify-center gap-2.5 rounded-full border border-white/15 bg-white/[0.06] px-10 py-4 text-[12px] font-semibold uppercase tracking-[0.14em] text-white backdrop-blur-md transition-all duration-300 hover:scale-[1.02] hover:border-emerald-500/30 hover:bg-emerald-500/[0.08] hover:shadow-[0_0_32px_rgba(16,185,129,0.12)] sm:w-auto sm:px-12 sm:py-4 sm:text-[13px]"
+                className="group inline-flex w-full items-center justify-center gap-2.5 rounded-full border border-foreground/12 bg-foreground/[0.04] px-10 py-4 text-[12px] font-semibold uppercase tracking-[0.14em] text-foreground backdrop-blur-md transition-all duration-300 hover:scale-[1.02] hover:border-emerald-500/30 hover:bg-emerald-500/[0.08] hover:shadow-[0_0_32px_rgba(16,185,129,0.12)] sm:w-auto sm:px-12 sm:py-4 sm:text-[13px]"
                 aria-label="WhatsApp üzerinden yazın"
               >
                 <WhatsAppIcon className="h-4 w-4 shrink-0 text-emerald-400/80 transition-colors group-hover:text-emerald-300" />

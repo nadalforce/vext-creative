@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { PhotoFrame } from "@/components/ui/PhotoFrame";
 
@@ -48,8 +48,8 @@ export function ServiceVisualComposition({
 
   if (!a) {
     return (
-      <div className="flex h-[480px] items-center justify-center rounded-3xl border border-dashed border-white/15 bg-zinc-900/50">
-        <p className="text-sm text-white/40">Görsel bulunamadı</p>
+      <div className="flex h-[480px] items-center justify-center rounded-3xl border border-dashed border-foreground/12 bg-neutral-100/50">
+        <p className="text-sm text-foreground/40">Görsel bulunamadı</p>
       </div>
     );
   }

@@ -139,6 +139,10 @@ export const rootMetadata: Metadata = {
     apple: { url: BRAND.favicon, type: "image/png", sizes: "180x180" },
   },
   manifest: `${SITE_URL}/site.webmanifest`,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#FAFAF8" },
+    { media: "(prefers-color-scheme: dark)", color: "#FAFAF8" },
+  ],
   openGraph: {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,

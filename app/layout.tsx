@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import { AmbientParticles } from "@/components/ui/AmbientParticles";
+import { PremiumSiteBackground } from "@/components/ui/PremiumSiteBackground";
 import { FloatingSocial } from "@/components/ui/FloatingSocial";
 import { OrganizationSchema } from "@/components/seo/OrganizationSchema";
 import { rootMetadata } from "@/lib/seo";
@@ -14,6 +15,14 @@ const inter = Inter({
   preload: true,
 });
 
+const displayFont = Plus_Jakarta_Sans({
+  variable: "--font-display",
+  subsets: ["latin", "latin-ext"],
+  weight: ["600", "700", "800"],
+  display: "swap",
+  preload: true,
+});
+
 export const metadata: Metadata = rootMetadata;
 
 export default function RootLayout({
@@ -22,11 +31,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr" className={`${inter.variable} h-full scroll-smooth`}>
-      <body className="min-h-full bg-black text-white antialiased">
+    <html
+      lang="tr"
+      className={`${inter.variable} ${displayFont.variable} h-full scroll-smooth`}
+    >
+      <body className="relative min-h-full bg-transparent text-foreground antialiased">
         <OrganizationSchema />
+        <PremiumSiteBackground />
         <AmbientParticles />
-        {children}
+        <div className="relative z-[1]">{children}</div>
         <FloatingSocial />
       </body>
     </html>

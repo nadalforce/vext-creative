@@ -14,7 +14,7 @@ export function ArticleInternalLinks({ article }: ArticleInternalLinksProps) {
     .filter((a): a is JournalArticle => Boolean(a));
 
   return (
-    <aside className="mt-12 rounded-2xl border border-violet-500/20 bg-violet-950/20 p-6 md:p-8">
+    <aside className="mt-12 rounded-2xl border border-violet-400/20 bg-violet-100/30 p-6 md:p-8">
       <h2 className="text-[11px] font-semibold uppercase tracking-[0.24em] text-violet-400">
         İlgili Bağlantılar
       </h2>
@@ -22,7 +22,7 @@ export function ArticleInternalLinks({ article }: ArticleInternalLinksProps) {
         <li>
           <Link
             href={article.relatedServiceHref}
-            className="text-white/70 underline-offset-4 transition-colors hover:text-violet-300 hover:underline"
+            className="text-foreground/70 underline-offset-4 transition-colors hover:text-violet-300 hover:underline"
           >
             → {article.relatedServiceLabel} hizmetimiz
           </Link>
@@ -31,7 +31,7 @@ export function ArticleInternalLinks({ article }: ArticleInternalLinksProps) {
           <li key={post.slug}>
             <Link
               href={`${JOURNAL_BASE}/${post.slug}`}
-              className="text-white/70 underline-offset-4 transition-colors hover:text-violet-300 hover:underline"
+              className="text-foreground/70 underline-offset-4 transition-colors hover:text-violet-300 hover:underline"
             >
               → {post.title}
             </Link>
@@ -40,7 +40,7 @@ export function ArticleInternalLinks({ article }: ArticleInternalLinksProps) {
         <li>
           <Link
             href="/#contact"
-            className="text-white/70 underline-offset-4 transition-colors hover:text-violet-300 hover:underline"
+            className="text-foreground/70 underline-offset-4 transition-colors hover:text-violet-300 hover:underline"
           >
             → İletişim ve proje teklifi
           </Link>

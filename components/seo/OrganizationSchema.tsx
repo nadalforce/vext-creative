@@ -1,4 +1,5 @@
 import { BRAND } from "@/lib/brand";
+import { CONTACT } from "@/lib/constants";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 const organizationSchema = {
@@ -13,7 +14,7 @@ const organizationSchema = {
     width: 512,
     height: 512,
   },
-  sameAs: ["https://www.instagram.com/vextcreative"],
+  sameAs: [CONTACT.instagram],
 };
 
 const websiteSchema = {

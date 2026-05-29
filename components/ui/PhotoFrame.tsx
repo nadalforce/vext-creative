@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -43,7 +43,7 @@ export function PhotoFrame({
     return (
       <motion.div
         {...motionProps}
-        className={`photo-frame photo-frame--showcase relative inline-block max-w-full shrink-0 overflow-hidden rounded-2xl bg-black ring-1 ring-white/15 shadow-[0_20px_60px_rgba(0,0,0,0.45)] md:rounded-3xl ${className}`}
+        className={`photo-frame photo-frame--showcase relative inline-block max-w-full shrink-0 overflow-hidden rounded-2xl bg-background ring-1 ring-foreground/12 shadow-[0_20px_60px_rgba(17,17,17,0.08)] md:rounded-3xl ${className}`}
       >
         <Image
           src={src}
@@ -63,7 +63,7 @@ export function PhotoFrame({
   return (
     <motion.div
       {...motionProps}
-      className={`photo-frame relative w-full overflow-hidden rounded-2xl bg-black ring-1 ring-white/15 shadow-[0_20px_60px_rgba(0,0,0,0.45)] md:rounded-3xl ${heightClass} ${className}`}
+      className={`photo-frame relative w-full overflow-hidden rounded-2xl bg-background ring-1 ring-foreground/12 shadow-[0_20px_60px_rgba(17,17,17,0.08)] md:rounded-3xl ${heightClass} ${className}`}
     >
       <div className="absolute inset-0">
         <Image
@@ -82,7 +82,7 @@ export function PhotoFrame({
           quality={82}
         />
       </div>
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[12%] bg-gradient-to-t from-black/25 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[12%] bg-gradient-to-t from-background/25 to-transparent" />
     </motion.div>
   );
 }

@@ -20,7 +20,7 @@ function InstagramIcon({ className }: { className?: string }) {
 }
 
 const btnBase =
-  "group relative flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white/80 backdrop-blur-2xl transition-all duration-500 hover:border-white/30 hover:text-white hover:shadow-[0_0_40px_rgba(255,255,255,0.08)]";
+  "group relative flex h-12 w-12 items-center justify-center rounded-full border border-foreground/10 bg-surface text-foreground/70 shadow-sm backdrop-blur-2xl transition-all duration-500 hover:border-violet-400/25 hover:text-foreground hover:shadow-[0_0_32px_rgba(180,24,24,0.1)]";
 
 export function FloatingSocial() {
   return (
@@ -53,7 +53,7 @@ export function FloatingSocial() {
         whileTap={{ scale: 0.96 }}
       >
         <span className="absolute inset-0 rounded-full bg-white/10 opacity-0 blur-xl transition-opacity group-hover:opacity-100" />
-        <InstagramIcon className="relative h-5 w-5 text-white/70 group-hover:text-white" />
+        <InstagramIcon className="relative h-5 w-5 text-foreground/70 group-hover:text-foreground" />
       </motion.a>
     </motion.div>
   );

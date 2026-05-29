@@ -13,7 +13,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="relative overflow-hidden bg-black py-32 md:py-40"
+      className="relative overflow-hidden bg-transparent py-32 md:py-40"
     >
       <VextWatermark opacity={0.04} />
       <GlowOrb className="right-0 top-1/4" color="violet" delay={1} />
@@ -22,6 +22,7 @@ export function Services() {
         <SectionHeading
           label="Hizmetler"
           title="Özenle Gerçekleştirdiğimiz Hizmetler"
+          titleHighlight="Hizmetler"
           description="Tüm dijital medya hizmetlerimiz."
           align="center"
         />
@@ -37,14 +38,14 @@ export function Services() {
           {SERVICES.map((service) => (
             <motion.div key={service.id} variants={fadeUp}>
               <a href={service.href} className="group block h-full">
-                <GlassCard className="h-full transition-all duration-500 group-hover:border-white/20 group-hover:shadow-[0_0_50px_rgba(255,255,255,0.04)]">
-                  <motion.div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-white/[0.06] text-violet-300 ring-1 ring-white/15">
+                <GlassCard className="h-full transition-all duration-500 group-hover:border-foreground/14 group-hover:shadow-[0_0_50px_rgba(255,255,255,0.04)]">
+                  <motion.div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-foreground/[0.04] text-violet-300 ring-1 ring-foreground/12">
                     <ServiceIcon name={service.icon} className="h-6 w-6" />
                   </motion.div>
-                  <h3 className="font-display text-lg font-semibold text-white md:text-xl">
+                  <h3 className="font-display text-lg font-bold text-foreground md:text-xl">
                     {service.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-white/40">
+                  <p className="text-body mt-3 text-sm">
                     {service.description}
                   </p>
                   <span className="mt-6 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-violet-400/80 transition-colors group-hover:text-violet-300">

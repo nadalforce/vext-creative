@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { AboutCapabilityIcon } from "@/components/ui/AboutCapabilityIcon";
@@ -6,18 +6,18 @@ import { GlowOrb } from "@/components/ui/GlowOrb";
 
 const CAPABILITIES = [
   { label: "Reklam Filmleri & Prodüksiyon", icon: "film" },
-  { label: "Drone & Marka Çekimleri", icon: "product" },
+  { label: "Drone & Marka Çekimleri", icon: "drone" },
   { label: "Sosyal Medya & Reklam Yönetimi", icon: "social" },
-  { label: "SEO Uyumlu Web Tasarımı & UI/UX Deneyimi", icon: "brand" },
+  { label: "SEO Uyumlu Web Tasarımı & UI/UX Deneyimi", icon: "web" },
   { label: "Grafik Tasarım & Marka Kimliği Oluşturma", icon: "brand" },
-  { label: "Kreatif İçerik & Dijital Medya Tasarımları", icon: "social" },
+  { label: "Kreatif İçerik & Dijital Medya Tasarımları", icon: "creative" },
 ] as const;
 
 export function About() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden border-t border-white/[0.04] bg-black py-24 md:py-36"
+      className="relative overflow-hidden border-t border-foreground/[0.06] bg-transparent py-24 md:py-36"
     >
       <GlowOrb className="-left-40 top-1/4" color="violet" delay={0.5} />
       <GlowOrb className="right-0 bottom-1/4" color="soft" delay={2} />
@@ -27,7 +27,7 @@ export function About() {
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent"
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-foreground/15 to-transparent"
         aria-hidden
       />
 
@@ -43,9 +43,9 @@ export function About() {
             <span className="h-px w-12 bg-gradient-to-r from-violet-500 to-transparent" />
             Hakkımızda
           </p>
-          <h2 className="font-display text-[clamp(2rem,5.5vw,4.25rem)] font-bold leading-[1.08] tracking-[-0.03em] text-white">
+          <h2 className="font-display text-[clamp(2rem,5.5vw,4.25rem)] font-extrabold leading-[1.08] text-foreground">
             Biz{" "}
-            <span className="text-gradient-brand">VEXT Medya</span> Ekibi
+            <span className="text-accent">VEXT Medya</span> Ekibi
             Olarak
           </h2>
         </motion.header>
@@ -57,8 +57,8 @@ export function About() {
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.85, delay: 0.1 }}
         >
-          <div className="space-y-5 text-base leading-[1.75] text-white/55 md:space-y-6 md:text-lg md:leading-relaxed">
-            <p className="font-medium leading-[1.65] text-white/85 md:leading-relaxed">
+          <div className="text-body space-y-5 text-base md:space-y-6 md:text-lg">
+            <p className="font-medium text-foreground/85">
               Video kurgu ve grafik tasarım alanında başladığımız bu yolculukta,
               üniversite yıllarımızdan itibaren medya alanında aktif olarak eğitim
               alırken kendimizi gerçek projelerle geliştirmeye devam ettik.
@@ -90,10 +90,10 @@ export function About() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.05 * i, duration: 0.5 }}
                 >
-                  <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-white/[0.08] bg-white/[0.02] text-white/40 transition-colors duration-300 group-hover:border-white/15 group-hover:text-white/65 md:h-9 md:w-9">
+                  <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-foreground/[0.08] bg-white/[0.02] text-foreground/55 transition-colors duration-300 group-hover:border-foreground/12 group-hover:text-foreground/70 md:h-9 md:w-9">
                     <AboutCapabilityIcon name={item.icon} className="h-[15px] w-[15px] md:h-4 md:w-4" />
                   </span>
-                  <span className="min-w-0 flex-1 pt-0.5 text-base font-medium leading-snug text-white/70 md:text-[1.05rem] md:leading-[1.5]">
+                  <span className="min-w-0 flex-1 pt-0.5 text-base font-medium leading-snug text-foreground/80 md:text-[1.05rem] md:leading-[1.5]">
                     {item.label}
                   </span>
                 </motion.li>
@@ -103,7 +103,7 @@ export function About() {
         </motion.div>
 
         <motion.div
-          className="mt-16 max-w-3xl border-t border-white/[0.06] pt-16 md:mt-20 md:pt-20 lg:mt-24"
+          className="mt-16 max-w-3xl border-t border-foreground/[0.06] pt-16 md:mt-20 md:pt-20 lg:mt-24"
           initial={{ opacity: 1, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -112,7 +112,7 @@ export function About() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-violet-400/90">
             Stüdyo · Prodüksiyon
           </p>
-          <p className="mt-5 text-base leading-[1.75] text-white/55 md:text-lg md:leading-relaxed">
+          <p className="text-body mt-5 text-base md:text-lg">
             Stüdyo ortamımızda; beyaz perde, yeşil perde, ürün tanıtım
             çekimleri, e-ticaret ürün çekimleri ve yaratıcı reklam
             prodüksiyonlarıyla markanıza özel premium içerikler üretiyoruz.
@@ -128,15 +128,15 @@ export function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          <motion.div className="relative rounded-3xl border border-white/[0.08] bg-black/60 px-8 py-12 backdrop-blur-sm md:rounded-[2rem] md:px-14 md:py-16">
-            <p className="font-display text-2xl font-semibold leading-[1.35] tracking-tight text-white md:text-3xl lg:text-4xl">
+          <motion.div className="relative rounded-3xl border border-foreground/[0.08] bg-foreground/25 px-8 py-12 backdrop-blur-sm md:rounded-[2rem] md:px-14 md:py-16">
+            <p className="font-display text-2xl font-semibold leading-[1.35] text-foreground md:text-3xl lg:text-4xl">
               Her projede hedefimiz:{" "}
-              <span className="text-white/50">sadece içerik üretmek değil,</span>
+              <span className="text-foreground/80">sadece içerik üretmek değil,</span>
             </p>
-            <p className="mt-4 font-display text-2xl font-bold leading-[1.3] text-gradient-brand md:text-3xl lg:text-4xl">
+            <p className="mt-4 font-display text-2xl font-extrabold leading-[1.3] text-accent md:text-3xl lg:text-4xl">
               markaya güçlü bir atmosfer kazandırmak.
             </p>
-            <div className="mt-8 h-px w-16 bg-gradient-to-r from-white/50 to-transparent" />
+            <div className="mt-8 h-px w-16 bg-gradient-to-r from-foreground/50 to-transparent" />
           </motion.div>
         </motion.blockquote>
       </motion.div>

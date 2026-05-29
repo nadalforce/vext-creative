@@ -41,11 +41,11 @@ export default function JournalPage() {
         <section className="mt-20 md:mt-24" aria-labelledby="articles-grid-heading">
           <h2
             id="articles-grid-heading"
-            className="font-display text-2xl font-bold text-white md:text-3xl"
+            className="font-display text-2xl font-bold text-foreground md:text-3xl"
           >
             Tüm Yazılar
           </h2>
-          <p className="mt-3 max-w-2xl text-sm text-white/45 md:text-base">
+          <p className="mt-3 max-w-2xl text-sm text-foreground/45 md:text-base">
             Video prodüksiyon, marka kimliği ve dijital içerik üzerine SEO odaklı
             rehberler.
           </p>

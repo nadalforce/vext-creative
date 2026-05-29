@@ -1,18 +1,38 @@
 "use client";
 
+import { Fragment } from "react";
 import { motion } from "framer-motion";
 import { fadeUp } from "@/lib/animations";
 
 type SectionHeadingProps = {
   label: string;
   title: string;
+  /** Kelime veya ifade kırmızı vurgu ile gösterilir */
+  titleHighlight?: string;
   description?: string;
   align?: "left" | "center";
 };
 
+function renderTitleWithAccent(title: string, highlight?: string) {
+  if (!highlight || !title.includes(highlight)) {
+    return title;
+  }
+
+  const parts = title.split(highlight);
+  return parts.map((part, index) => (
+    <Fragment key={`${part}-${index}`}>
+      {part}
+      {index < parts.length - 1 ? (
+        <span className="text-accent">{highlight}</span>
+      ) : null}
+    </Fragment>
+  ));
+}
+
 export function SectionHeading({
   label,
   title,
+  titleHighlight,
   description,
   align = "left",
 }: SectionHeadingProps) {
@@ -27,18 +47,20 @@ export function SectionHeading({
       whileInView="visible"
       viewport={{ once: true, margin: "-80px" }}
     >
-      <span className="mb-4 inline-flex items-center gap-3 text-xs font-medium uppercase tracking-[0.3em] text-violet-400">
-        <span className="h-px w-8 bg-gradient-to-r from-white/50 to-transparent" />
+      <span
+        className={`text-label mb-4 inline-flex items-center gap-3 text-xs uppercase ${alignClass}`}
+      >
+        <span className="h-px w-8 bg-gradient-to-r from-foreground/35 to-transparent" />
         {label}
       </span>
       <h2
-        className={`font-display text-4xl font-bold leading-[1.05] tracking-tight text-white md:text-6xl lg:text-7xl ${alignClass}`}
+        className={`font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground md:text-6xl lg:text-7xl ${alignClass}`}
       >
-        {title}
+        {renderTitleWithAccent(title, titleHighlight)}
       </h2>
       {description && (
         <p
-          className={`mt-6 text-lg leading-relaxed text-white/50 md:text-xl ${alignClass}`}
+          className={`text-body mt-6 text-lg md:text-xl ${alignClass}`}
         >
           {description}
         </p>

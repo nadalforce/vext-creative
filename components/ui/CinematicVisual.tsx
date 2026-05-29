@@ -49,12 +49,12 @@ export function CinematicVisual({
   return (
     <motion.div
       ref={ref}
-      className={`cinematic-visual cinematic-visual--${visibility} relative isolate overflow-hidden bg-[#0a0404] ${className}`}
+      className={`cinematic-visual cinematic-visual--${visibility} relative isolate overflow-hidden bg-background-muted ${className}`}
       style={style}
       aria-hidden={!alt}
     >
       {!showPhoto && (
-        <div className="absolute inset-0 bg-gradient-to-br from-violet-950/60 via-[#0a0406] to-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-violet-100/60 via-background-muted to-background" />
       )}
 
       {showPhoto && (
@@ -81,11 +81,11 @@ export function CinematicVisual({
       <motion.div
         className={`pointer-events-none absolute inset-0 ${
           isAmbient
-            ? "bg-gradient-to-t from-black/35 via-transparent to-black/10"
-            : "bg-gradient-to-t from-black/30 via-transparent to-transparent"
+            ? "bg-gradient-to-t from-background/35 via-transparent to-background/10"
+            : "bg-gradient-to-t from-background/30 via-transparent to-transparent"
         }`}
       />
-      <motion.div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/15 via-transparent to-black/15" />
+      <motion.div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-background/15 via-transparent to-background/15" />
       <motion.div className="film-grain pointer-events-none absolute inset-0 opacity-[0.06]" />
     </motion.div>
   );

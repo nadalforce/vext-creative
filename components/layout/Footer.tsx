@@ -12,7 +12,7 @@ export function Footer() {
   const homeHref = resolveNavHref("#hero", pathname);
 
   return (
-    <footer className="relative border-t border-white/[0.06] bg-black">
+    <footer className="relative border-t border-foreground/[0.06] bg-transparent">
       <motion.div className="relative mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
         <motion.div className="flex flex-col gap-12 md:flex-row md:items-start md:justify-between">
           <motion.div className="min-w-0 shrink-0">
@@ -26,7 +26,7 @@ export function Footer() {
             {NAV_LINKS.map((link) => {
               const href = resolveNavHref(link.href, pathname);
               const className =
-                "text-sm text-white/40 transition-colors hover:text-white";
+                "text-sm font-medium tracking-[0.01em] text-foreground/45 transition-colors hover:text-foreground";
               if (isRouteLink(href)) {
                 return (
                   <Link key={link.href} href={href} className={className}>
@@ -45,13 +45,13 @@ export function Footer() {
           <motion.div className="flex flex-col gap-4">
             <a
               href={CONTACT.emailHref}
-              className="text-sm text-white/60 transition-colors hover:text-violet-400"
+              className="text-sm text-foreground/60 transition-colors hover:text-violet-400"
             >
               {CONTACT.email}
             </a>
             <a
               href={CONTACT.phoneHref}
-              className="text-sm text-white/50 transition-colors hover:text-violet-400"
+              className="text-sm text-foreground/50 transition-colors hover:text-violet-400"
             >
               {CONTACT.phone}
             </a>
@@ -60,7 +60,7 @@ export function Footer() {
                 href={CONTACT.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs uppercase tracking-widest text-white/30 transition-colors hover:text-white"
+                className="text-xs uppercase tracking-widest text-foreground/30 transition-colors hover:text-foreground"
               >
                 Instagram
               </a>
@@ -68,7 +68,7 @@ export function Footer() {
                 href={CONTACT.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs uppercase tracking-widest text-white/30 transition-colors hover:text-white"
+                className="text-xs uppercase tracking-widest text-foreground/30 transition-colors hover:text-foreground"
               >
                 WhatsApp
               </a>
@@ -76,8 +76,8 @@ export function Footer() {
           </motion.div>
         </motion.div>
 
-        <motion.div className="mt-16 border-t border-white/[0.06] pt-8">
-          <p className="text-xs text-white/30">
+        <motion.div className="mt-16 border-t border-foreground/[0.06] pt-8">
+          <p className="text-xs text-foreground">
             © 2026 VEXT Medya. Tüm hakları saklıdır.
           </p>
         </motion.div>

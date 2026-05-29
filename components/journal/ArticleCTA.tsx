@@ -3,7 +3,7 @@ import Link from "next/link";
 export function ArticleCTA() {
   return (
     <section
-      className="relative mt-20 overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-violet-950/30 via-black to-black px-8 py-14 text-center md:px-16"
+      className="relative mt-20 overflow-hidden rounded-3xl border border-foreground/10 bg-gradient-to-br from-violet-100/50 via-surface to-background px-8 py-14 text-center shadow-sm md:px-16"
       aria-labelledby="article-cta-heading"
     >
       <div
@@ -12,11 +12,11 @@ export function ArticleCTA() {
       />
       <h2
         id="article-cta-heading"
-        className="font-display relative text-2xl font-bold text-white md:text-4xl"
+        className="font-display relative text-2xl font-bold text-foreground md:text-4xl"
       >
         Markanızı Profesyonel Görsel Dile Taşıyalım
       </h2>
-      <p className="relative mx-auto mt-4 max-w-xl text-sm text-white/50 md:text-base">
+      <p className="relative mx-auto mt-4 max-w-xl text-sm text-foreground/50 md:text-base">
         Projenizi birlikte planlayalım. Video prodüksiyon, sosyal medya yönetimi,
         grafik tasarım ve web deneyimleri için VEXT Medya ekibi yanınızda.
       </p>

@@ -13,7 +13,7 @@ export function ArticleBody({ article }: ArticleBodyProps) {
             return (
               <p
                 key={i}
-                className="mb-6 text-base leading-[1.85] text-white/60 md:text-lg"
+                className="mb-6 text-base leading-[1.85] text-foreground/60 md:text-lg"
               >
                 {block.text}
               </p>
@@ -23,7 +23,7 @@ export function ArticleBody({ article }: ArticleBodyProps) {
               <h2
                 key={i}
                 id={block.id}
-                className="font-display mb-5 mt-12 scroll-mt-28 text-2xl font-bold text-white md:text-3xl"
+                className="font-display mb-5 mt-12 scroll-mt-28 text-2xl font-bold text-foreground md:text-3xl"
               >
                 {block.text}
               </h2>
@@ -33,7 +33,7 @@ export function ArticleBody({ article }: ArticleBodyProps) {
               <h3
                 key={i}
                 id={block.id}
-                className="font-display mb-4 mt-8 scroll-mt-28 text-xl font-semibold text-white/90"
+                className="font-display mb-4 mt-8 scroll-mt-28 text-xl font-semibold text-foreground/90"
               >
                 {block.text}
               </h3>
@@ -42,7 +42,7 @@ export function ArticleBody({ article }: ArticleBodyProps) {
             return (
               <ul
                 key={i}
-                className="mb-8 list-disc space-y-2 pl-6 text-base leading-relaxed text-white/55 md:text-lg"
+                className="mb-8 list-disc space-y-2 pl-6 text-base leading-relaxed text-foreground/55 md:text-lg"
               >
                 {block.items.map((item, j) => (
                   <li key={j}>{item}</li>

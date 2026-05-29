@@ -17,6 +17,20 @@ type ServiceShowcaseSectionProps = {
   reverse?: boolean;
 };
 
+function titleWithAccent(title: string) {
+  const words = title.trim().split(/\s+/);
+  if (words.length <= 1) {
+    return title;
+  }
+  const last = words.pop()!;
+  return (
+    <>
+      {words.join(" ")}{" "}
+      <span className="text-accent">{last}</span>
+    </>
+  );
+}
+
 const LAYOUT_BY_ID: Record<
   string,
   "production" | "edit" | "design" | "web" | "brandIdentity" | "direction"
@@ -43,7 +57,7 @@ export function ServiceShowcaseSection({
   return (
     <section
       id={sectionId}
-      className="relative overflow-visible border-t border-white/[0.06] bg-black py-20 md:py-28"
+      className="relative overflow-visible border-t border-foreground/[0.06] bg-transparent py-20 md:py-28"
     >
       <GlowOrb className="right-0 top-0 opacity-40" color="violet" delay={0.3} />
 
@@ -56,15 +70,15 @@ export function ServiceShowcaseSection({
         >
           <div>
             <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-violet-600/20 text-violet-300 ring-1 ring-violet-500/30">
+              <div className="group flex h-11 w-11 items-center justify-center rounded-xl bg-violet-600/20 text-violet-300 ring-1 ring-violet-500/30">
                 <ServiceIcon name={icon} className="h-5 w-5" />
               </div>
               <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-violet-400">
                 {tagline}
               </p>
             </div>
-            <h3 className="font-display max-w-3xl text-3xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
-              {title}
+            <h3 className="font-display max-w-3xl text-3xl font-extrabold leading-tight text-foreground md:text-4xl lg:text-5xl">
+              {titleWithAccent(title)}
             </h3>
           </div>
           <motion.a
@@ -99,7 +113,7 @@ export function ServiceShowcaseSection({
         )}
 
         <motion.div
-          className={`max-w-2xl space-y-5 text-base leading-[1.75] text-white/55 md:space-y-6 md:text-lg md:leading-relaxed ${hasVisuals ? "" : "mt-2"}`}
+          className={`text-body max-w-2xl space-y-5 text-base md:space-y-6 md:text-lg ${hasVisuals ? "" : "mt-2"}`}
           variants={fadeUp}
           initial="hidden"
           animate="visible"

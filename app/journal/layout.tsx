@@ -13,7 +13,7 @@ export default function JournalLayout({
   return (
     <>
       <Header />
-      <main id="main-content" className="relative min-h-screen bg-black">
+      <main id="main-content" className="relative min-h-screen bg-transparent">
         {children}
       </main>
       <Footer />

@@ -28,7 +28,7 @@ function InstagramIcon({ className }: { className?: string }) {
 }
 
 const socialBtnBase =
-  "group inline-flex h-12 items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.03] px-5 text-[13px] font-semibold tracking-[0.02em] backdrop-blur-xl transition-all duration-300";
+  "group inline-flex h-12 items-center gap-2.5 rounded-full border border-foreground/10 bg-foreground/[0.03] px-5 text-[13px] font-semibold tracking-[0.02em] backdrop-blur-xl transition-all duration-300";
 
 const CONTACT_SHOWCASE = MEDIA.contactShowcase;
 
@@ -43,7 +43,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden border-t border-white/[0.04] bg-black py-24 md:py-36"
+      className="relative overflow-hidden border-t border-foreground/[0.06] bg-transparent py-24 md:py-36"
     >
       <GlowOrb className="bottom-0 left-1/4" color="ambient" delay={0} />
       <GlowOrb className="right-1/4 top-1/4" color="violet" delay={2} />
@@ -52,6 +52,7 @@ export function Contact() {
         <SectionHeading
           label="İletişim"
           title="Projenizi Konuşalım"
+          titleHighlight="Konuşalım"
           description="İşletmenizi büyütmek için bizimle iletişime geçin. Size hızlıca dönüş sağlayalım."
         />
 
@@ -76,7 +77,7 @@ export function Contact() {
                 ease: [0.22, 1, 0.36, 1],
               }}
             >
-              <figure className="photo-frame relative w-full overflow-hidden rounded-2xl bg-black ring-1 ring-white/15 shadow-[0_20px_60px_rgba(0,0,0,0.45)] md:rounded-3xl">
+              <figure className="photo-frame relative w-full overflow-hidden rounded-2xl bg-background ring-1 ring-foreground/12 shadow-[0_20px_60px_rgba(17,17,17,0.08)] md:rounded-3xl">
                 <Image
                   src={src}
                   alt={`${BRAND.name} stüdyo görseli ${i + 1}`}
@@ -106,34 +107,34 @@ export function Contact() {
                 <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-violet-400">
                   {CONTACT.officeLabel}
                 </p>
-                <p className="font-display mt-3 text-2xl font-semibold text-white md:text-3xl">
+                <p className="font-display mt-3 text-2xl font-bold text-foreground md:text-3xl">
                   {CONTACT.officeAddress}
                 </p>
               </div>
 
               <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-white/30">
+                <p className="text-xs uppercase tracking-[0.2em] text-foreground/30">
                   E-posta
                 </p>
                 <a
                   href={CONTACT.emailHref}
-                  className="mt-1 block font-display text-xl text-white transition-colors hover:text-violet-400 md:text-2xl"
+                  className="mt-1 block font-display text-xl text-foreground transition-colors hover:text-violet-400 md:text-2xl"
                 >
                   {CONTACT.email}
                 </a>
               </div>
 
               <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-white/30">
+                <p className="text-xs uppercase tracking-[0.2em] text-foreground/30">
                   Telefon
                 </p>
                 <a
                   href={CONTACT.phoneHref}
-                  className="mt-1 block font-display text-xl text-white transition-colors hover:text-violet-400 md:text-2xl"
+                  className="mt-1 block font-display text-xl text-foreground transition-colors hover:text-violet-400 md:text-2xl"
                 >
                   {CONTACT.phone}
                 </a>
-                <p className="mt-2 text-sm font-medium tracking-[0.03em] text-white/40 md:text-[0.9375rem]">
+                <p className="mt-2 text-sm font-medium tracking-[0.03em] text-foreground/40 md:text-[0.9375rem]">
                   Emre Maltepe | Proje Yöneticisi
                 </p>
               </div>
@@ -144,7 +145,7 @@ export function Contact() {
                 href={CONTACT.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`${socialBtnBase} text-white/55 hover:border-white/25 hover:bg-white/[0.06] hover:text-white hover:shadow-[0_0_32px_rgba(255,255,255,0.06)]`}
+                className={`${socialBtnBase} text-foreground/55 hover:border-foreground/16 hover:bg-foreground/[0.06] hover:text-foreground hover:shadow-[0_0_32px_rgba(255,255,255,0.06)]`}
                 aria-label="Instagram"
               >
                 <InstagramIcon className="h-4 w-4 shrink-0 text-violet-400/90 transition-colors group-hover:text-violet-300" />
@@ -154,7 +155,7 @@ export function Contact() {
                 href={CONTACT.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`${socialBtnBase} text-white/55 hover:border-emerald-500/35 hover:bg-emerald-500/10 hover:text-emerald-200 hover:shadow-[0_0_32px_rgba(16,185,129,0.18)]`}
+                className={`${socialBtnBase} text-foreground/55 hover:border-emerald-500/35 hover:bg-emerald-500/10 hover:text-emerald-200 hover:shadow-[0_0_32px_rgba(16,185,129,0.18)]`}
                 aria-label="WhatsApp"
               >
                 <WhatsAppIcon className="h-4 w-4 shrink-0 text-emerald-400/90 transition-colors group-hover:text-emerald-300" />
@@ -182,10 +183,10 @@ export function Contact() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <h3 className="font-display text-2xl font-bold text-white">
+                  <h3 className="font-display text-2xl font-extrabold text-foreground">
                     Mesajınız Alındı
                   </h3>
-                  <p className="mt-2 text-white/40">
+                  <p className="mt-2 text-foreground/40">
                     En kısa sürede sizinle iletişime geçeceğiz.
                   </p>
                 </motion.div>
@@ -193,7 +194,7 @@ export function Contact() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <motion.div variants={fadeUp} className="grid gap-6 sm:grid-cols-2">
                     <div>
-                      <label htmlFor="name" className="mb-2 block text-xs uppercase tracking-widest text-white/40">
+                      <label htmlFor="name" className="mb-2 block text-xs uppercase tracking-widest text-foreground/40">
                         Ad Soyad
                       </label>
                       <input
@@ -201,12 +202,12 @@ export function Contact() {
                         name="name"
                         type="text"
                         required
-                        className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3.5 text-white placeholder-white/20 outline-none transition-all focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/30"
+                        className="w-full rounded-xl border border-foreground/10 bg-foreground/[0.03] px-4 py-3.5 text-foreground placeholder-foreground/35 outline-none transition-all focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/30"
                         placeholder="Adınız"
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="mb-2 block text-xs uppercase tracking-widest text-white/40">
+                      <label htmlFor="email" className="mb-2 block text-xs uppercase tracking-widest text-foreground/40">
                         E-posta
                       </label>
                       <input
@@ -214,26 +215,26 @@ export function Contact() {
                         name="email"
                         type="email"
                         required
-                        className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3.5 text-white placeholder-white/20 outline-none transition-all focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/30"
+                        className="w-full rounded-xl border border-foreground/10 bg-foreground/[0.03] px-4 py-3.5 text-foreground placeholder-foreground/35 outline-none transition-all focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/30"
                         placeholder="ornek@email.com"
                       />
                     </div>
                   </motion.div>
 
                   <motion.div variants={fadeUp}>
-                    <label htmlFor="service" className="mb-2 block text-xs uppercase tracking-widest text-white/40">
+                    <label htmlFor="service" className="mb-2 block text-xs uppercase tracking-widest text-foreground/40">
                       Hizmet
                     </label>
                     <select
                       id="service"
                       name="service"
-                      className="w-full appearance-none rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3.5 text-white outline-none transition-all focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/30"
+                      className="w-full appearance-none rounded-xl border border-foreground/10 bg-foreground/[0.03] px-4 py-3.5 text-foreground outline-none transition-all focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/30"
                     >
-                      <option value="" className="bg-black">
+                      <option value="" className="bg-background">
                         Hizmet seçin
                       </option>
                       {SERVICES.map((s) => (
-                        <option key={s.id} value={s.id} className="bg-black">
+                        <option key={s.id} value={s.id} className="bg-background">
                           {s.title}
                         </option>
                       ))}
@@ -241,7 +242,7 @@ export function Contact() {
                   </motion.div>
 
                   <motion.div variants={fadeUp}>
-                    <label htmlFor="message" className="mb-2 block text-xs uppercase tracking-widest text-white/40">
+                    <label htmlFor="message" className="mb-2 block text-xs uppercase tracking-widest text-foreground/40">
                       Mesaj
                     </label>
                     <textarea
@@ -249,7 +250,7 @@ export function Contact() {
                       name="message"
                       rows={5}
                       required
-                      className="w-full resize-none rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3.5 text-white placeholder-white/20 outline-none transition-all focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/30"
+                      className="w-full resize-none rounded-xl border border-foreground/10 bg-foreground/[0.03] px-4 py-3.5 text-foreground placeholder-foreground/35 outline-none transition-all focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/30"
                       placeholder="Projeniz hakkında bize bilgi verin..."
                     />
                   </motion.div>

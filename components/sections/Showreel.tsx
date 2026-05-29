@@ -21,7 +21,7 @@ export function Showreel({ backgroundImages = [] }: ShowreelProps) {
   return (
     <section
       id="showreel"
-      className="relative overflow-hidden border-t border-white/[0.04] bg-zinc-950 py-20 md:py-28"
+      className="relative overflow-hidden border-t border-foreground/[0.06] bg-transparent py-20 md:py-28"
     >
       <GlowOrb className="left-0 top-0" color="soft" delay={1} />
 
@@ -29,6 +29,7 @@ export function Showreel({ backgroundImages = [] }: ShowreelProps) {
         <SectionHeading
           label="Sinematik Derleme"
           title="Kadrajlarımız Konuşsun"
+          titleHighlight="Konuşsun"
           description="Kurgu, renk ve ritim — post prodüksiyon atölyemizden."
           align="center"
         />
@@ -53,13 +54,13 @@ export function Showreel({ backgroundImages = [] }: ShowreelProps) {
                   <motion.button
                     type="button"
                     onClick={() => setPlaying(true)}
-                    className="absolute left-1/2 top-1/2 z-20 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-black/50 backdrop-blur-md transition-transform hover:scale-105"
+                    className="absolute left-1/2 top-1/2 z-20 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-foreground/18 bg-surface/85 backdrop-blur-md transition-transform hover:scale-105"
                     initial={{ opacity: 1 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     aria-label="Oynat"
                   >
-                    <svg className="ml-1 h-8 w-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="ml-1 h-8 w-8 text-foreground" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </motion.button>

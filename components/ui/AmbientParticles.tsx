@@ -43,7 +43,7 @@ export function AmbientParticles() {
       {particles.map((p) => (
         <motion.span
           key={p.id}
-          className="absolute rounded-full bg-violet-300/30 blur-[1px]"
+          className="absolute rounded-full bg-violet-400/20 blur-[1px]"
           style={{
             left: p.left,
             top: p.top,

@@ -6,7 +6,7 @@ export const CONTACT = {
   email: "info@vextmedya.com",
   emailHref: "mailto:info@vextmedya.com",
   whatsapp: "https://wa.me/905521042694",
-  instagram: "https://www.instagram.com/vextcreative",
+  instagram: "https://www.instagram.com/vextmedya",
   officeLabel: "OFİS",
   officeAddress: "İstanbul / Kartal / Yalı Mah.",
   location: "İstanbul / Kartal / Yalı Mah.",

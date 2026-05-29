@@ -56,7 +56,7 @@ export function CinematicLayer({
           draggable={false}
         />
       </motion.div>
-      <motion.div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/10 to-black/40" />
+      <motion.div className="absolute inset-0 bg-gradient-to-b from-background/25 via-background/10 to-background/40" />
     </motion.div>
   );
 }

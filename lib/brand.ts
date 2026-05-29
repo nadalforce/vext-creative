@@ -15,11 +15,11 @@ export const BRAND = {
 } as const;
 
 export const BRAND_COLORS = {
-  accent: "#5a3838",
-  electric: "#9a7878",
-  deep: "#0a0606",
-  glowAmbient: "rgba(120, 0, 0, 0.1)",
-  glowSoft: "rgba(255, 255, 255, 0.06)",
+  accent: "#e30613",
+  electric: "#f04450",
+  deep: "#111111",
+  glowAmbient: "rgba(227, 6, 19, 0.1)",
+  glowSoft: "rgba(17, 17, 17, 0.04)",
 } as const;
 
 export const ATMOSPHERE_OPACITY = {

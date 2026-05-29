@@ -4,8 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { BRAND } from "@/lib/brand";
 
-const WORDMARK_W = 1024;
-const WORDMARK_H = 344;
+/** Trimmed transparent wordmark (see scripts/prepare-logo-transparent.mjs) */
+const WORDMARK_W = 585;
+const WORDMARK_H = 203;
 
 type PremiumWordmarkLogoProps = {
   /** Navbar: kompakt; footer: biraz daha büyük, aynı PNG ve oran */
@@ -17,16 +18,12 @@ type PremiumWordmarkLogoProps = {
   className?: string;
 };
 
-const variantImgClass: Record<PremiumWordmarkLogoProps["variant"], string> = {
-  navbar:
-    "h-auto w-[clamp(104px,38vw,168px)] max-h-[52px] object-contain object-left md:w-[200px] md:max-h-none",
-  footer:
-    "h-auto w-[clamp(116px,48vw,200px)] max-h-[56px] object-contain object-left md:max-h-none md:w-[236px]",
-};
+const logoImgClass =
+  "m-0 block h-[64px] w-auto max-h-[70px] border-0 bg-transparent object-contain object-left p-0 shadow-none md:h-[66px]";
 
 const variantSizes: Record<PremiumWordmarkLogoProps["variant"], string> = {
-  navbar: "(max-width: 767px) 140px, 200px",
-  footer: "(max-width: 767px) 180px, 236px",
+  navbar: "(max-width: 767px) 160px, 220px",
+  footer: "(max-width: 767px) 170px, 230px",
 };
 
 export function PremiumWordmarkLogo({
@@ -42,8 +39,9 @@ export function PremiumWordmarkLogo({
       width={WORDMARK_W}
       height={WORDMARK_H}
       priority={priority}
+      unoptimized
       sizes={variantSizes[variant]}
-      className={`shrink-0 ${variantImgClass[variant]} ${className}`.trim()}
+      className={`brand-wordmark shrink-0 ${logoImgClass} ${className}`.trim()}
     />
   );
 

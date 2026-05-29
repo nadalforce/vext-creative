@@ -32,7 +32,7 @@ function CollagePhoto({
 }) {
   return (
     <motion.div
-      className={`relative overflow-hidden rounded-2xl bg-zinc-900 shadow-[0_24px_70px_rgba(0,0,0,0.55)] ring-1 ring-white/15 md:rounded-3xl ${className}`}
+      className={`relative overflow-hidden rounded-2xl bg-neutral-100 shadow-[0_24px_70px_rgba(17,17,17,0.08)] ring-1 ring-foreground/12 md:rounded-3xl ${className}`}
       style={{ rotate, ...style }}
       initial={{ opacity: 1, y: 28 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -167,7 +167,7 @@ export function VisualCollage({ images }: VisualCollageProps) {
     <section
       id="galeri"
       ref={ref}
-      className="relative overflow-hidden border-t border-white/[0.04] bg-black py-28 md:py-40"
+      className="relative overflow-hidden border-t border-foreground/[0.06] bg-transparent py-28 md:py-40"
     >
       <GlowOrb className="left-1/2 top-1/3 -translate-x-1/2" color="ambient" delay={0.5} />
 
@@ -175,6 +175,7 @@ export function VisualCollage({ images }: VisualCollageProps) {
         <SectionHeading
           label="Atölye Kareleri"
           title="VEXT Medya Ofisimizden Kareler"
+          titleHighlight="Kareler"
           description="Ofis, set, kurgu masası ve tasarım ekranından seçilmiş kareler."
           align="center"
         />

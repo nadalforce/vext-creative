@@ -3,6 +3,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
+import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { ServiceShowcases } from "@/components/sections/ServiceShowcases";
 import { About } from "@/components/sections/About";
 import { CareersJoin } from "@/components/sections/CareersJoin";
@@ -18,6 +19,7 @@ export default function Home() {
       <main id="main-content" className="relative z-10">
         <Hero />
         <Services />
+        <WhyChooseUs />
         <ServiceShowcases />
         <About />
         <CareersJoin />

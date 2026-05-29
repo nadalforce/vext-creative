@@ -10,9 +10,9 @@ type GlowOrbProps = {
 };
 
 const colors = {
-  violet: "bg-violet-950/50",
-  soft: "bg-violet-900/25",
-  ambient: "bg-[radial-gradient(circle,rgba(120,0,0,0.1)_0%,transparent_70%)]",
+  violet: "bg-violet-200/40",
+  soft: "bg-violet-100/50",
+  ambient: "bg-[radial-gradient(circle,rgba(180,24,24,0.08)_0%,transparent_70%)]",
 };
 
 export function GlowOrb({
